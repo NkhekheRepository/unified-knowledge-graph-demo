@@ -1,6 +1,6 @@
 window.GRAPH_DATA = {
   "source": "Public demo — fictional/sanitized representation of a knowledge system (not real project data)",
-  "generated": "2026-11-15T16:03:24.674Z",
+  "generated": "2026-11-15T16:13:09.462Z",
   "nodes": [
     {
       "id": "demo_mission",
@@ -52,14 +52,14 @@ window.GRAPH_DATA = {
       "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "demo_spec_evidence_loop",
+      "id": "demo_spec_loop",
       "label": "Public demo node",
       "group": "art",
       "value": 15,
       "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "demo_evidence_loop",
+      "id": "demo_analysis_loop",
       "label": "Public demo node",
       "group": "art",
       "value": 20,
@@ -577,13 +577,13 @@ window.GRAPH_DATA = {
     },
     {
       "from": "demo_reports",
-      "to": "demo_spec_evidence_loop",
+      "to": "demo_spec_loop",
       "label": "produces",
       "id": 10
     },
     {
       "from": "demo_reports",
-      "to": "demo_evidence_loop",
+      "to": "demo_analysis_loop",
       "label": "contains",
       "id": 11
     },
@@ -594,31 +594,31 @@ window.GRAPH_DATA = {
       "id": 12
     },
     {
-      "from": "demo_spec_evidence_loop",
-      "to": "demo_evidence_loop",
+      "from": "demo_spec_loop",
+      "to": "demo_analysis_loop",
       "label": "specifies",
       "id": 13
     },
     {
-      "from": "demo_evidence_loop",
+      "from": "demo_analysis_loop",
       "to": "demo_demonstrator",
       "label": "aligns_with",
       "id": 14
     },
     {
-      "from": "demo_evidence_loop",
+      "from": "demo_analysis_loop",
       "to": "demo_source_a",
       "label": "consumes",
       "id": 15
     },
     {
-      "from": "demo_evidence_loop",
+      "from": "demo_analysis_loop",
       "to": "demo_source_b",
       "label": "consumes",
       "id": 16
     },
     {
-      "from": "demo_evidence_loop",
+      "from": "demo_analysis_loop",
       "to": "demo_conformance",
       "label": "implements",
       "id": 17
@@ -1070,7 +1070,7 @@ window.GRAPH_DATA = {
     },
     {
       "from": "demo_state",
-      "to": "demo_evidence_loop",
+      "to": "demo_analysis_loop",
       "label": "tracks",
       "id": 84
     },
@@ -1216,7 +1216,7 @@ window.GRAPH_DATA = {
     },
     {
       "from": "demo_ten",
-      "to": "demo_evidence_loop",
+      "to": "demo_analysis_loop",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1536,7 +1536,7 @@ window.GRAPH_DATA = {
     },
     {
       "from": "demo_loop",
-      "to": "demo_evidence_loop",
+      "to": "demo_analysis_loop",
       "label": "feedback_loop",
       "dashes": true,
       "color": {
@@ -1616,7 +1616,7 @@ window.GRAPH_DATA = {
     },
     {
       "from": "demo_steward",
-      "to": "demo_evidence_loop",
+      "to": "demo_analysis_loop",
       "label": "connects_all",
       "dashes": true,
       "color": {
@@ -1786,7 +1786,7 @@ window.GRAPH_DATA = {
     },
     {
       "from": "demo_metacognition",
-      "to": "demo_evidence_loop",
+      "to": "demo_analysis_loop",
       "label": "monitors",
       "dashes": true,
       "color": {
