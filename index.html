@@ -9,29 +9,80 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="lib/vis-network.min.js"></script>
 <style>
-:root{--bg:#05070d;--fg:#eef4ff;--line:rgba(120,160,220,.18);--muted:#98abc9;--card:rgba(16,24,44,.72);--gap:12px;--assist:#34d399;--risk:#fb7185;--hint:#fbbf24}
-body{margin:0;font-family:Inter,system-ui,Segoe UI,sans-serif;background:radial-gradient(1200px 600px at 20% -10%,rgba(56,189,248,.16),transparent),linear-gradient(180deg,#0a1020,#05070d);color:var(--fg)}
-header{display:flex;gap:var(--gap);align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line)}
-h1{font-size:18px;margin:0}.sub{color:var(--muted);font-size:12px;margin-top:2px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
-.btn{all:unset;padding:7px 12px;border:1px solid var(--line);border-radius:999px;cursor:pointer}
-main{display:grid;grid-template-columns:front 360px;gap:var(--gap)}
-a:link,a:visited{color:inherit}
+:root{--bg:#05070d;--fg:#eef4ff;--muted:#98abc9;--card:rgba(16,24,44,.72);--line:rgba(120,160,220,.14);--accent:#7dd3fc;--accent2:#a78bfa}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,sans-serif;color:var(--fg);background:radial-gradient(1200px 600px at 20% -10%,rgba(124,58,237,.22),transparent),radial-gradient(900px 600px at 110% 20%,rgba(56,189,248,.18),transparent),linear-gradient(180deg,#0a1020,#05070d);overflow:hidden}
+.app{display:grid;grid-template-columns:1fr 360px;grid-template-rows:auto 1fr;height:100vh}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 18px;border-bottom:1px solid var(--line);background:rgba(8,13,26,.55);backdrop-filter:blur(14px)}
+h1{margin:0;font-size:17px;font-weight:650}.sub{color:var(--muted);font-size:12px;margin-top:2px}
+.top{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn,.chip,.lyr,.pill{all:unset;padding:6px 10px;border:1px solid var(--line);border-radius:999px;cursor:pointer;color:var(--fg);font-size:11.5px;background:rgba(30,45,78,.4)}
+.btn:hover,.chip:hover,.lyr:hover{border-color:rgba(125,211,252,.35)}
+.search{display:flex;align-items:center;gap:8px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(30,45,78,.4);min-width:220px}
+.search input{all:unset;color:var(--fg);font-size:12px}
+main{position:relative}#network{position:absolute;inset:0}
+.hud{position:absolute;left:14px;bottom:14px;z-index:5;display:flex;gap:8px}.stat{padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:rgba(12,18,34,.55);font-size:11px;color:var(--muted)}.stat b{color:var(--fg)}
+.quickbar{position:absolute;top:12px;left:12px;z-index:6;display:flex;gap:6px;flex-wrap:wrap;padding:6px 10px;border:1px solid var(--line);border-radius:10px;background:rgba(12,18,34,.7);max-width:900px}
+.quickbar .qbtn{padding:5px 9px;border-radius:8px;border:1px solid transparent;background:rgba(30,45,78,.5);color:var(--fg);font-size:11px;cursor:pointer}
+.quickbar .qbtn:hover{border-color:rgba(125,211,252,.4)}
+aside{border-left:1px solid var(--line);background:rgba(10,16,30,.55);backdrop-filter:blur(14px);padding:12px;overflow:auto;display:flex;flex-direction:column;gap:10px}
+.card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:11px}
+.card h3{margin:0 0 7px;font-size:12px;color:#dfeaff}.small{color:var(--muted);font-size:12px;line-height:1.45}
+a:link,a:visited{color:var(--accent);text-decoration:none}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:6px}.card .idx{max-height:180px;overflow:auto}
+.tag{display:inline-block;padding:2px 6px;border-radius:999px;background:rgba(125,211,252,.12);font-size:10px;color:#bfeafe;margin-left:4px}
+.notice{border-color:#fbbf24}
+ul{margin:6px 0 0 16px;padding:0} li{margin:3px 0}
 </style>
 </head>
 <body>
-<header><div><h1>Unified Knowledge Graph</h1><div class="sub">Public demo — sanitized sample of a governance + curation knowledge fabric</div></div><button class="btn" id="exportBtn">Export demo JSON</button></header>
-<div id="network" style="height:70vh; border:1px solid var(--line); border-radius:12px"></div>
+<div class="app">
+  <header>
+    <div>
+      <h1>Unified Knowledge Graph — Public Demo</h1>
+      <div class="sub">Sanitized sample · people · presence · spines · libraries · artifacts · concepts · synapse overlays</div>
+    </div>
+    <div class="top">
+      <div class="search"><input id="q" placeholder="Search the public sample…" /></div>
+      <button class="btn" id="fit">Fit</button>
+      <button class="btn" id="reset">Reset</button>
+      <button class="btn primary" id="exportBtn">Export JSON</button>
+    </div>
+  </header>
+  <main>
+    <div id="network"></div>
+    <div class="quickbar" id="quickbar"></div>
+    <div class="hud"><div class="stat"><b id="nCount">0</b> demo entities</div><div class="stat"><b id="eCount">0</b> demo relationships</div><div class="stat">Sample · not evidence · not live data</div></div>
+  </main>
+  <aside>
+    <div class="card notice"><h3>PUBLIC DEMO</h3><div class="small" style="color:#fde68a">A showcase only. No private data, URLs, credentials, runtime details or evidence state are included.</div></div>
+    <div class="card"><h3>Legend</h3><div class="legend"><div><span style="color:#a78bfa">●</span> Mission/model</div><div><span style="color:#38bdf8">●</span> Spine A (trust)</div><div><span style="color:#c084fc">●</span> Spine B (signal)</div><div><span style="color:#fbbf24">●</span> Library/set</div><div><span style="color:#fb923c">●</span> Bridge (X-like)</div><div><span style="color:#34d399">●</span> Latest/artifact</div><div><span style="color:#94a3b8">●</span> Other domain</div><div><span style="color:#f472b6">●</span> Concept / synapse</div></div></div>
+    <div class="card"><h3>Navigate</h3><input id="idxFilter" placeholder="Filter list…" style="all:unset;width:100%;box-sizing:border-box;margin-bottom:8px;padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:rgba(30,45,78,.35);color:var(--fg);font-size:12px" /><div class="idx" id="indexList"></div></div>
+    <div class="card"><h3>Selection</h3><div id="info" class="small">Select a node or relationship.</div></div>
+    <div class="card"><h3>Synapse overlays</h3><div class="small"><div><span class="tag">best_synergy</span> strong cross-domain value</div><div><span class="tag">tension_risk</span> friction or failure mode</div><div><span class="tag">potential_next</span> high-value unrealized link</div><div><span class="tag">feedback_loop</span> compounding cycle</div></div></div>
+  </aside>
+</div>
 <script src="data/graph.js"></script>
 <script>
-document.getElementById('exportBtn').onclick = () => {
-  const blob = new Blob([JSON.stringify(window.GRAPH_DATA, null, 2)], {type:'application/json'});
-  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='unified-knowledge-graph-demo.json'; a.click(); URL.revokeObjectURL(a.href);
-};
-const nCount = document.createElement('div'); // not used; placeholder
-const data = window.GRAPH_DATA;
-const nodes = new vis.DataSet(data.nodes); const edges = new vis.DataSet(data.edges);
-const network = new vis.Network(document.getElementById('network'), {nodes, edges}, {physics:{solver:'barnesHut', stabilization:{iterations:300, fit:true}}});
+const G={root:'#a78bfa',a:'#38bdf8',b:'#c084fc',lib:'#fbbf24',bridge:'#fb923c',art:'#34d399',other:'#94a3b8',concept:'#f472b6'};
+const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const DATA=window.GRAPH_DATA||{nodes:[],edges:[]};
+const nodesArr=DATA.nodes, edgesArr=DATA.edges;
+const allNodes=new vis.DataSet(nodesArr.map(n=>({...n,color:{background:G[n.group]||G.other,border:'rgba(255,255,255,.18)'},font:{color:'#eef4ff',size:12,face:'Inter',strokeWidth:3,strokeColor:'#05070d'},shadow:{enabled:true,color:'rgba(0,0,0,.35)',size:8,y:3},title:esc((n.label||'').replace(/\n/g,' ')),borderWidth:n.group==='art'?2:1.5})));
+const allEdges=new vis.DataSet(edgesArr.map((e,i)=>({id:i,...e,arrows:{to:{enabled:true,scaleFactor:0.55}},width:e.label==='best_synergy'?3:1.2,font:{size:0},smooth:{type:'continuous',roundness:0.35},color:{color:({best_synergy:'rgba(52,211,153,.75)',tension_risk:'rgba(251,113,133,.75)',potential_next:'rgba(251,191,36,.6)',feedback_loop:'rgba(167,139,250,.6)',arc_next:'rgba(251,191,36,.35)'}[e.label])||'rgba(140,170,210,.35)'}})));
+const network=new vis.Network(document.getElementById('network'),{nodes:allNodes,edges:allEdges},{nodes:{shape:'dot',scaling:{min:10,max:32,label:{enabled:true}}},interaction:{hover:true,multiselect:false,keyboard:{enabled:true}},physics:{enabled:true,solver:'forceAtlas2Based',forceAtlas2Based:{gravitationalConstant:-55,centralGravity:0.012,springLength:140,springConstant:0.05,damping:0.5,avoidOverlap:0.7},stabilization:{iterations:350,fit:true}}});
+document.getElementById('nCount').textContent=allNodes.length; document.getElementById('eCount').textContent=allEdges.length;
+const jumpWrap=document.getElementById('quickbar'); const jumpIds=['demo_mission','demo_spine_a','demo_spine_b','demo_lib_7','demo_analysis_loop','demo_build_pipeline','demo_rec_1','demo_arc_1','demo_runtime','demo_presence_hub','demo_syn','demo_ten','demo_pot','demo_loop'];
+const jumpLabels={demo_mission:'Home',demo_spine_a:'Spine A',demo_spine_b:'Spine B',demo_lib_7:'Latest',demo_analysis_loop:'Evidence loop',demo_build_pipeline:'Build pipeline',demo_rec_1:'Music',demo_arc_1:'Timeline',demo_runtime:'Runtime',demo_presence_hub:'Presence',demo_syn:'Best connections',demo_ten:'Weakest connections',demo_pot:'Potential',demo_loop:'Feedback loops'};
+for(const id of jumpIds){ if(!nodesArr.find(n=>n.id===id)) continue; const b=document.createElement('button'); b.className='qbtn'; b.textContent=jumpLabels[id]||id; b.onclick=()=>{network.selectNodes([id]);network.focus(id,{scale:1.2,animation:true});showNode(id);}; jumpWrap.appendChild(b);}
+const idxFilter=document.getElementById('idxFilter'); const indexList=document.getElementById('indexList');
+function renderIndex(f=''){ const q=f.toLowerCase(); const items=nodesArr.filter(n=>!q||((n.label||'')+' '+n.id).toLowerCase().includes(q)); indexList.innerHTML=items.map(n=>'<div class="idx-item" data-id="'+esc(n.id)+'"><div>'+esc((n.label||'').replace(/\n/g,' '))+'</div><span>'+esc(n.group)+'</span></div>').join('')||'<div class="small">No matches</div>'; Array.from(indexList.querySelectorAll('.idx-item')).forEach(el=>el.onclick=()=>{const id=el.dataset.id;network.selectNodes([id]);network.focus(id,{scale:1.2,animation:true});showNode(id);}); }
+const info=document.getElementById('info');
+function showNode(id){ const n=allNodes.get(id); if(!n) return; const rels=network.getConnectedEdges(id).map(eid=>{const e=allEdges.get(eid);const other=e.from===id?e.to:e.from;return '<li><code>'+esc(e.label)+'</code> → '+esc((allNodes.get(other).label||'').replace(/\n/g,' '))+'</li>';}).join(''); info.innerHTML='<div><b>'+esc((n.label||'').replace(/\n/g,' '))+'</b> <span class="small">('+esc(n.group)+')</span></div><div class="small" style="margin-top:4px">'+esc(n.detail||'')+'</div>'+(n.url?'<div style="margin-top:4px"><a href="'+esc(n.url)+'" target="_blank" rel="noopener">Open link</a></div>':'')+'<div style="margin-top:6px" class="small"><b>Relationships</b></div><ul class="small">'+(rels||'<li>none</li>')+'</ul>'; }
+network.on('selectNode',p=>{if(p.nodes.length)showNode(p.nodes[0])}); network.on('selectEdge',p=>{if(!p.edges.length)return;const e=allEdges.get(p.edges[0]);const a=allNodes.get(e.from),b=allNodes.get(e.to);info.innerHTML='<b>Relationship</b><div style="margin-top:6px">'+esc((a.label||e.from))+' → <code>'+esc(e.label)+'</code> → '+esc((b.label||e.to))+'</div>';});
+renderIndex(''); idxFilter.addEventListener('input',e=>renderIndex(e.target.value));
+document.getElementById('fit').onclick=()=>network.fit({animation:true}); document.getElementById('reset').onclick=()=>{idxFilter.value='';renderIndex('');network.unselectAll();network.fit({animation:true});info.innerHTML='Select a node or relationship.';};
+document.getElementById('q').addEventListener('input',e=>{const t=e.target.value.trim().toLowerCase();if(!t){allNodes.update(nodesArr.map(n=>({id:n.id,opacity:1})));return;}const match=new Set(nodesArr.filter(n=>((n.label||'')+' '+(n.detail||'')).toLowerCase().includes(t)).map(n=>n.id));allNodes.update(nodesArr.map(n=>({id:n.id,opacity:match.has(n.id)?1:0.12}))); if(match.size===1){const id=[...match][0];network.selectNodes([id]);network.focus(id,{scale:1.2,animation:true});showNode(id);}});
+document.getElementById('exportBtn').onclick=()=>{const payload={meta:{generated:new Date().toISOString(),title:'Public Demo — Unified Knowledge Graph',nodes:nodesArr.length,edges:edgesArr.length},nodes:nodesArr,edges:edgesArr};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='unified-knowledge-graph-demo.json';a.click();URL.revokeObjectURL(a.href);};
 </script>
 </body>
 </html>
