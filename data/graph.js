@@ -1,1105 +1,1112 @@
 window.GRAPH_DATA = {
-  "source": "Public demo — fictional/sanitized (no project, channel, URLs, runtime, or evidence state exposed)",
-  "generated": "2026-11-15T15:39:10.544Z",
+  "source": "Public demo — fictional/sanitized representation of a knowledge system (not real project data)",
+  "generated": "2026-11-15T16:03:24.674Z",
   "nodes": [
     {
-      "id": "mission",
-      "label": "Signal Stewardship\nfor a Living Commons",
+      "id": "demo_mission",
+      "label": "Public demo node",
       "group": "root",
       "value": 30,
-      "detail": "Public demo — mission/operating model (fictional). See README for the real project under private work."
+      "detail": "Sanitized public demo entity (group root). See README for scope and limits."
     },
     {
-      "id": "channel",
-      "label": "Public presence (demo)",
+      "id": "demo_presence",
+      "label": "Public demo node",
       "group": "root",
       "value": 22,
-      "detail": "Public demo — mission/operating model (fictional). See README for the real project under private work."
+      "detail": "Sanitized public demo entity (group root). See README for scope and limits."
     },
     {
-      "id": "op",
-      "label": "Operating Model",
+      "id": "demo_operating_model",
+      "label": "Public demo node",
       "group": "root",
       "value": 16,
-      "detail": "Public demo — mission/operating model (fictional). See README for the real project under private work."
+      "detail": "Sanitized public demo entity (group root). See README for scope and limits."
     },
     {
-      "id": "plan",
-      "label": "KNOWLEDGE_PLAN_60_DAYS ★",
+      "id": "demo_plan",
+      "label": "Public demo node",
       "group": "art",
       "value": 18,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "spineA",
-      "label": "Spine A\nSovereign Systems & Trust",
+      "id": "demo_spine_a",
+      "label": "Public demo node",
       "group": "a",
       "value": 26,
-      "detail": "Spine A — Sovereign Systems & Trust (demo representation)."
+      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
     },
     {
-      "id": "gov_reports",
-      "label": "Project artifact (demo)",
+      "id": "demo_reports",
+      "label": "Public demo node",
       "group": "a",
       "value": 18,
-      "detail": "Spine A — Sovereign Systems & Trust (demo representation)."
+      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
     },
     {
-      "id": "gov_map",
-      "label": "Project artifact (demo)",
+      "id": "demo_conformance_map",
+      "label": "Public demo node",
       "group": "art",
       "value": 16,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "ev_spec",
-      "label": "Project artifact (demo)",
+      "id": "demo_spec_evidence_loop",
+      "label": "Public demo node",
       "group": "art",
       "value": 15,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "ev_loop",
-      "label": "Project artifact (demo)",
+      "id": "demo_evidence_loop",
+      "label": "Public demo node",
       "group": "art",
       "value": 20,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "mi18_demo",
-      "label": "Project artifact (demo)",
+      "id": "demo_demonstrator",
+      "label": "Public demo node",
       "group": "a",
       "value": 15,
-      "detail": "Spine A — Sovereign Systems & Trust (demo representation)."
+      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
     },
     {
-      "id": "src_csirt",
-      "label": "Project artifact (demo)",
+      "id": "demo_source_a",
+      "label": "Public demo node",
       "group": "a",
       "value": 13,
-      "detail": "Spine A — Sovereign Systems & Trust (demo representation)."
+      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
     },
     {
-      "id": "src_notice",
-      "label": "Project artifact (demo)",
+      "id": "demo_source_b",
+      "label": "Public demo node",
       "group": "a",
       "value": 13,
-      "detail": "Spine A — Sovereign Systems & Trust (demo representation)."
+      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
     },
     {
-      "id": "spineB",
-      "label": "Spine B\nSignal & Curation",
+      "id": "demo_spine_b",
+      "label": "Public demo node",
       "group": "b",
       "value": 26,
-      "detail": "Spine B — Signal & Curation (demo representation)."
+      "detail": "Sanitized public demo entity (group b). See README for scope and limits."
     },
     {
-      "id": "cur_pipeline",
-      "label": "Project artifact (demo)",
+      "id": "demo_build_pipeline",
+      "label": "Public demo node",
       "group": "art",
       "value": 20,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "cur_stab",
-      "label": "Project artifact (demo)",
+      "id": "demo_stabilization",
+      "label": "Public demo node",
       "group": "art",
       "value": 13,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "cur_golden",
-      "label": "Project artifact (demo)",
+      "id": "demo_golden_run",
+      "label": "Public demo node",
       "group": "art",
       "value": 13,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "cur_audio",
-      "label": "Project artifact (demo)",
+      "id": "demo_audio_analysis",
+      "label": "Public demo node",
       "group": "art",
       "value": 13,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "L1",
-      "label": "L1 Life Frontiers\nBio-Signal (8) ⟡",
+      "id": "demo_lib_1",
+      "label": "Public demo node",
       "group": "lib",
       "value": 14,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "L2",
-      "label": "L2 Agentic Minds &\nAutonomous Systems (8) ⟡",
+      "id": "demo_lib_2",
+      "label": "Public demo node",
       "group": "lib",
       "value": 14,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "L3",
-      "label": "L3 Sovereign Digital\nInfra & Governance (7) ⟡",
+      "id": "demo_lib_3",
+      "label": "Public demo node",
       "group": "lib",
       "value": 14,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "L4",
-      "label": "L4 Trust, Crypto &\nSecurity (7) ⟡",
+      "id": "demo_lib_4",
+      "label": "Public demo node",
       "group": "lib",
       "value": 14,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "L5",
-      "label": "L5 Research, Models &\nIntelligent Systems (8) ⟡",
+      "id": "demo_lib_5",
+      "label": "Public demo node",
       "group": "lib",
       "value": 14,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "L6",
-      "label": "L6 Automation, Edge\nOps & Builds (7) ⟡",
+      "id": "demo_lib_6",
+      "label": "Public demo node",
       "group": "lib",
       "value": 14,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "L7",
-      "label": "L7 Planetary &\nComplex Systems (10) ★",
+      "id": "demo_lib_7",
+      "label": "Public demo node",
       "group": "art",
       "value": 16,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "L8",
-      "label": "L8 Consciousness &\nSensemaking (10) ★",
+      "id": "demo_lib_8",
+      "label": "Public demo node",
       "group": "art",
       "value": 16,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "L9",
-      "label": "L9 Futures, Coordination\n& Civilization (10) ★",
+      "id": "demo_lib_9",
+      "label": "Public demo node",
       "group": "art",
       "value": 16,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "L10",
-      "label": "L10 Cosmic & First-\nPrinciples (10) ★",
+      "id": "demo_lib_10",
+      "label": "Public demo node",
       "group": "art",
       "value": 16,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "X1",
-      "label": "X1 Signal: Freq/Bio/Truth (6)",
+      "id": "demo_bridge_1",
+      "label": "Public demo node",
       "group": "bridge",
       "value": 12,
-      "detail": "Cross-domain bridge demo node (illustrative)."
+      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
     },
     {
-      "id": "X2",
-      "label": "X2 Persistent Loops (6)",
+      "id": "demo_bridge_2",
+      "label": "Public demo node",
       "group": "bridge",
       "value": 12,
-      "detail": "Cross-domain bridge demo node (illustrative)."
+      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
     },
     {
-      "id": "X3",
-      "label": "X3 Sovereign Commons (6)",
+      "id": "demo_bridge_3",
+      "label": "Public demo node",
       "group": "bridge",
       "value": 12,
-      "detail": "Cross-domain bridge demo node (illustrative)."
+      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
     },
     {
-      "id": "X4",
-      "label": "X4 Order/Chaos Lab (6)",
+      "id": "demo_bridge_4",
+      "label": "Public demo node",
       "group": "bridge",
       "value": 12,
-      "detail": "Cross-domain bridge demo node (illustrative)."
+      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
     },
     {
-      "id": "X5",
-      "label": "X5 Builder's Continuum (6)",
+      "id": "demo_bridge_5",
+      "label": "Public demo node",
       "group": "bridge",
       "value": 12,
-      "detail": "Cross-domain bridge demo node (illustrative)."
+      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
     },
     {
-      "id": "R1",
-      "label": "R1 SA Jazz Renaissance (6)",
+      "id": "demo_rec_1",
+      "label": "Public demo node",
       "group": "lib",
       "value": 11,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "R2",
-      "label": "R2 Broken-Beat Continuum (6)",
+      "id": "demo_rec_2",
+      "label": "Public demo node",
       "group": "lib",
       "value": 11,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "R3",
-      "label": "R3 Deep/Ancestral House (6)",
+      "id": "demo_rec_3",
+      "label": "Public demo node",
       "group": "lib",
       "value": 11,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "R4",
-      "label": "R4 Call-and-Response (6)",
+      "id": "demo_rec_4",
+      "label": "Public demo node",
       "group": "lib",
       "value": 11,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "R5",
-      "label": "R5 Tension-to-Lift (6)",
+      "id": "demo_rec_5",
+      "label": "Public demo node",
       "group": "lib",
       "value": 11,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "R6",
-      "label": "R6 Voice-of-Intent (6)",
+      "id": "demo_rec_6",
+      "label": "Public demo node",
       "group": "lib",
       "value": 11,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T01",
-      "label": "01 Signal Awakening (10)",
+      "id": "demo_arc_1",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T02",
-      "label": "02 Roots Remembered (10)",
+      "id": "demo_arc_2",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T03",
-      "label": "03 Groove Intelligence (10)",
+      "id": "demo_arc_3",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T04",
-      "label": "04 Voice of Intent (10)",
+      "id": "demo_arc_4",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T05",
-      "label": "05 Cycles of Becoming (10)",
+      "id": "demo_arc_5",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T06",
-      "label": "06 Dialogue & Network (10)",
+      "id": "demo_arc_6",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T07",
-      "label": "07 Tension to Breakthrough (10)",
+      "id": "demo_arc_7",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T08",
-      "label": "08 Complex Harmony (10)",
+      "id": "demo_arc_8",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T09",
-      "label": "09 Ubuntu Futures (10)",
+      "id": "demo_arc_9",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T10t",
-      "label": "10 Resonant Healing (10)",
+      "id": "demo_arc_10",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T11",
-      "label": "11 Diaspora Continuum (10)",
+      "id": "demo_arc_11",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "T12",
-      "label": "12 Systems of Light (9)",
+      "id": "demo_arc_12",
+      "label": "Public demo node",
       "group": "lib",
       "value": 10,
-      "detail": "Library/set demo node (title/count preserved as illustrative labels)."
+      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
     },
     {
-      "id": "conformance",
-      "label": "Conformance & Traceability",
+      "id": "demo_conformance",
+      "label": "Public demo node",
       "group": "concept",
       "value": 14,
-      "detail": "Concept/synapse demo node (illustrative semantic overlay)."
+      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
     },
     {
-      "id": "curation",
-      "label": "Curation & Provenance",
+      "id": "demo_curation",
+      "label": "Public demo node",
       "group": "concept",
       "value": 14,
-      "detail": "Concept/synapse demo node (illustrative semantic overlay)."
+      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
     },
     {
-      "id": "research",
-      "label": "Research & Knowledge",
+      "id": "demo_research",
+      "label": "Public demo node",
       "group": "other",
       "value": 14,
-      "detail": "Public demo entity — illustrative presence/research/runtime node."
+      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
     },
     {
-      "id": "brand",
-      "label": "Brand & Presence",
+      "id": "demo_brand",
+      "label": "Public demo node",
       "group": "other",
       "value": 13,
-      "detail": "Public demo entity — illustrative presence/research/runtime node."
+      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
     },
     {
-      "id": "prods",
-      "label": "Products / Ops / Experiments",
+      "id": "demo_products",
+      "label": "Public demo node",
       "group": "other",
       "value": 14,
-      "detail": "Public demo entity — illustrative presence/research/runtime node."
+      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
     },
     {
-      "id": "state",
-      "label": "Current State & Backlog",
+      "id": "demo_state",
+      "label": "Public demo node",
       "group": "art",
       "value": 16,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "facebook",
-      "label": "Facebook Presence",
+      "id": "demo_facebook",
+      "label": "Public demo node",
       "group": "other",
       "value": 13,
-      "detail": "Public demo entity — illustrative presence/research/runtime node."
+      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
     },
     {
-      "id": "linkedin",
-      "label": "LinkedIn Presence",
+      "id": "demo_linkedin",
+      "label": "Public demo node",
       "group": "other",
       "value": 13,
-      "detail": "Public demo entity — illustrative presence/research/runtime node."
+      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
     },
     {
-      "id": "web",
-      "label": "Web Presence",
+      "id": "demo_web",
+      "label": "Public demo node",
       "group": "other",
       "value": 14,
-      "detail": "Public demo entity — illustrative presence/research/runtime node."
+      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
     },
     {
-      "id": "letapata",
-      "label": "Steward Persona (demo)",
+      "id": "demo_steward",
+      "label": "Public demo node",
       "group": "root",
       "value": 18,
-      "detail": "Public demo — mission/operating model (fictional). See README for the real project under private work."
+      "detail": "Sanitized public demo entity (group root). See README for scope and limits."
     },
     {
-      "id": "presence",
-      "label": "Unified Presence",
+      "id": "demo_presence_hub",
+      "label": "Public demo node",
       "group": "other",
       "value": 15,
-      "detail": "Public demo entity — illustrative presence/research/runtime node."
+      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
     },
     {
-      "id": "runtime",
-      "label": "Local Runtime\n(this computer)",
+      "id": "demo_runtime",
+      "label": "Public demo node",
       "group": "other",
       "value": 18,
-      "detail": "Public demo entity — illustrative presence/research/runtime node."
+      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
     },
     {
-      "id": "svc_opencode",
-      "label": "Project artifact (demo)",
+      "id": "demo_svc_opencode",
+      "label": "Public demo node",
       "group": "art",
       "value": 14,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "svc_fs",
-      "label": "Project artifact (demo)",
+      "id": "demo_svc_fs",
+      "label": "Public demo node",
       "group": "art",
       "value": 12,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "svc_llm",
-      "label": "Project artifact (demo)",
+      "id": "demo_svc_llm",
+      "label": "Public demo node",
       "group": "art",
       "value": 15,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "svc_alpha",
-      "label": "Project artifact (demo)",
+      "id": "demo_svc_alpha",
+      "label": "Public demo node",
       "group": "art",
       "value": 16,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "svc_voice",
-      "label": "Project artifact (demo)",
+      "id": "demo_svc_voice",
+      "label": "Public demo node",
       "group": "art",
       "value": 12,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "svc_driver",
-      "label": "Project artifact (demo)",
+      "id": "demo_svc_driver",
+      "label": "Public demo node",
       "group": "art",
       "value": 12,
-      "detail": "Artifact demo node (illustrative state; not live data)."
+      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
     },
     {
-      "id": "SYN",
-      "label": "Best Synergies",
+      "id": "demo_syn",
+      "label": "Public demo node",
       "group": "concept",
       "value": 18,
-      "detail": "Concept/synapse demo node (illustrative semantic overlay)."
+      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
     },
     {
-      "id": "TEN",
-      "label": "Tensions / Risks",
+      "id": "demo_ten",
+      "label": "Public demo node",
       "group": "concept",
       "value": 16,
-      "detail": "Concept/synapse demo node (illustrative semantic overlay)."
+      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
     },
     {
-      "id": "POT",
-      "label": "Potential Next Links",
+      "id": "demo_pot",
+      "label": "Public demo node",
       "group": "concept",
       "value": 17,
-      "detail": "Concept/synapse demo node (illustrative semantic overlay)."
+      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
     },
     {
-      "id": "LOOP",
-      "label": "Feedback Loops",
+      "id": "demo_loop",
+      "label": "Public demo node",
       "group": "concept",
       "value": 14,
-      "detail": "Concept/synapse demo node (illustrative semantic overlay)."
+      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
+    },
+    {
+      "id": "demo_metacognition",
+      "label": "Public demo node",
+      "group": "concept",
+      "value": 16,
+      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
     }
   ],
   "edges": [
     {
-      "id": 0,
-      "from": "mission",
-      "to": "op",
-      "label": "operates_by"
+      "from": "demo_mission",
+      "to": "demo_operating_model",
+      "label": "operates_by",
+      "id": 0
     },
     {
-      "id": 1,
-      "from": "mission",
-      "to": "spineA",
-      "label": "advances"
+      "from": "demo_mission",
+      "to": "demo_spine_a",
+      "label": "advances",
+      "id": 1
     },
     {
-      "id": 2,
-      "from": "mission",
-      "to": "spineB",
-      "label": "advances"
+      "from": "demo_mission",
+      "to": "demo_spine_b",
+      "label": "advances",
+      "id": 2
     },
     {
-      "id": 3,
-      "from": "mission",
-      "to": "channel",
-      "label": "expressed_through"
-    },
-    {
-      "id": 4,
-      "from": "channel",
-      "to": "spineB",
-      "label": "hosts"
-    },
-    {
-      "id": 5,
-      "from": "op",
-      "to": "plan",
-      "label": "codified_in"
-    },
-    {
-      "id": 6,
-      "from": "plan",
-      "to": "spineA",
-      "label": "schedules"
-    },
-    {
-      "id": 7,
-      "from": "plan",
-      "to": "spineB",
-      "label": "schedules"
-    },
-    {
-      "id": 8,
-      "from": "spineA",
-      "to": "gov_reports",
-      "label": "contains"
-    },
-    {
-      "id": 9,
-      "from": "gov_reports",
-      "to": "gov_map",
-      "label": "produces"
-    },
-    {
-      "id": 10,
-      "from": "gov_reports",
-      "to": "ev_spec",
-      "label": "produces"
-    },
-    {
-      "id": 11,
-      "from": "gov_reports",
-      "to": "ev_loop",
-      "label": "contains"
-    },
-    {
-      "id": 12,
-      "from": "gov_map",
-      "to": "mi18_demo",
-      "label": "maps_to"
-    },
-    {
-      "id": 13,
-      "from": "ev_spec",
-      "to": "ev_loop",
-      "label": "specifies"
-    },
-    {
-      "id": 14,
-      "from": "ev_loop",
-      "to": "mi18_demo",
-      "label": "aligns_with"
-    },
-    {
-      "id": 15,
-      "from": "ev_loop",
-      "to": "src_csirt",
-      "label": "consumes"
-    },
-    {
-      "id": 16,
-      "from": "ev_loop",
-      "to": "src_notice",
-      "label": "consumes"
-    },
-    {
-      "id": 17,
-      "from": "ev_loop",
-      "to": "conformance",
-      "label": "implements"
-    },
-    {
-      "id": 18,
-      "from": "spineA",
-      "to": "conformance",
-      "label": "targets"
-    },
-    {
-      "id": 19,
-      "from": "spineB",
-      "to": "cur_pipeline",
-      "label": "contains"
-    },
-    {
-      "id": 20,
-      "from": "cur_pipeline",
-      "to": "cur_stab",
-      "label": "produces"
-    },
-    {
-      "id": 21,
-      "from": "cur_pipeline",
-      "to": "cur_golden",
-      "label": "produces"
-    },
-    {
-      "id": 22,
-      "from": "cur_pipeline",
-      "to": "cur_audio",
-      "label": "produces"
-    },
-    {
-      "id": 23,
-      "from": "cur_pipeline",
-      "to": "curation",
-      "label": "implements"
-    },
-    {
-      "id": 24,
-      "from": "spineB",
-      "to": "curation",
-      "label": "targets"
-    },
-    {
-      "id": 25,
-      "from": "X1",
-      "to": "L1",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 26,
-      "from": "X1",
-      "to": "L8",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 27,
-      "from": "X2",
-      "to": "L2",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 28,
-      "from": "X2",
-      "to": "T05",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 29,
-      "from": "X3",
-      "to": "L3",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 30,
-      "from": "X3",
-      "to": "L9",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 31,
-      "from": "X4",
-      "to": "L5",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 32,
-      "from": "X4",
-      "to": "L7",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 33,
-      "from": "X5",
-      "to": "L6",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 34,
-      "from": "X5",
-      "to": "cur_pipeline",
-      "label": "bridges",
-      "dashes": true
-    },
-    {
-      "id": 35,
-      "from": "L8",
-      "to": "L10",
-      "label": "axis_with",
-      "dashes": true,
-      "color": {
-        "color": "#7dd3fc"
-      }
-    },
-    {
-      "id": 36,
-      "from": "L7",
-      "to": "L3",
-      "label": "axis_with",
-      "dashes": true,
-      "color": {
-        "color": "#7dd3fc"
-      }
-    },
-    {
-      "id": 37,
-      "from": "L2",
-      "to": "L9",
-      "label": "axis_with",
-      "dashes": true,
-      "color": {
-        "color": "#7dd3fc"
-      }
-    },
-    {
-      "id": 38,
-      "from": "L1",
-      "to": "X1",
-      "label": "axis_with",
-      "dashes": true,
-      "color": {
-        "color": "#7dd3fc"
-      }
-    },
-    {
-      "id": 39,
-      "from": "mission",
-      "to": "research",
-      "label": "informed_by"
-    },
-    {
-      "id": 40,
-      "from": "mission",
-      "to": "brand",
-      "label": "expressed_as"
-    },
-    {
-      "id": 41,
-      "from": "mission",
-      "to": "prods",
-      "label": "applied_in"
-    },
-    {
-      "id": 42,
-      "from": "mission",
-      "to": "presence",
-      "label": "expressed_through"
-    },
-    {
-      "id": 43,
-      "from": "brand",
-      "to": "presence",
-      "label": "unifies"
-    },
-    {
-      "id": 44,
-      "from": "channel",
-      "to": "presence",
-      "label": "integrates"
-    },
-    {
-      "id": 45,
-      "from": "presence",
-      "to": "facebook",
-      "label": "includes"
-    },
-    {
-      "id": 46,
-      "from": "presence",
-      "to": "linkedin",
-      "label": "includes"
-    },
-    {
-      "id": 47,
-      "from": "presence",
-      "to": "web",
-      "label": "includes"
-    },
-    {
-      "id": 48,
-      "from": "presence",
-      "to": "channel",
-      "label": "includes",
-      "dashes": true
-    },
-    {
-      "id": 49,
-      "from": "brand",
-      "to": "facebook",
-      "label": "published_on",
-      "dashes": true
-    },
-    {
-      "id": 50,
-      "from": "channel",
-      "to": "facebook",
-      "label": "cross_presence",
-      "dashes": true
-    },
-    {
-      "id": 51,
-      "from": "brand",
-      "to": "linkedin",
-      "label": "published_on",
-      "dashes": true
-    },
-    {
-      "id": 52,
-      "from": "channel",
-      "to": "linkedin",
-      "label": "cross_presence",
-      "dashes": true
-    },
-    {
-      "id": 53,
-      "from": "brand",
-      "to": "web",
-      "label": "published_on",
-      "dashes": true
-    },
-    {
-      "id": 54,
-      "from": "mission",
-      "to": "web",
+      "from": "demo_mission",
+      "to": "demo_presence",
       "label": "expressed_through",
-      "dashes": true
+      "id": 3
     },
     {
-      "id": 55,
-      "from": "web",
-      "to": "brand",
+      "from": "demo_presence",
+      "to": "demo_spine_b",
+      "label": "hosts",
+      "id": 4
+    },
+    {
+      "from": "demo_operating_model",
+      "to": "demo_plan",
+      "label": "codified_in",
+      "id": 5
+    },
+    {
+      "from": "demo_plan",
+      "to": "demo_spine_a",
+      "label": "schedules",
+      "id": 6
+    },
+    {
+      "from": "demo_plan",
+      "to": "demo_spine_b",
+      "label": "schedules",
+      "id": 7
+    },
+    {
+      "from": "demo_spine_a",
+      "to": "demo_reports",
+      "label": "contains",
+      "id": 8
+    },
+    {
+      "from": "demo_reports",
+      "to": "demo_conformance_map",
+      "label": "produces",
+      "id": 9
+    },
+    {
+      "from": "demo_reports",
+      "to": "demo_spec_evidence_loop",
+      "label": "produces",
+      "id": 10
+    },
+    {
+      "from": "demo_reports",
+      "to": "demo_evidence_loop",
+      "label": "contains",
+      "id": 11
+    },
+    {
+      "from": "demo_conformance_map",
+      "to": "demo_demonstrator",
+      "label": "maps_to",
+      "id": 12
+    },
+    {
+      "from": "demo_spec_evidence_loop",
+      "to": "demo_evidence_loop",
+      "label": "specifies",
+      "id": 13
+    },
+    {
+      "from": "demo_evidence_loop",
+      "to": "demo_demonstrator",
+      "label": "aligns_with",
+      "id": 14
+    },
+    {
+      "from": "demo_evidence_loop",
+      "to": "demo_source_a",
+      "label": "consumes",
+      "id": 15
+    },
+    {
+      "from": "demo_evidence_loop",
+      "to": "demo_source_b",
+      "label": "consumes",
+      "id": 16
+    },
+    {
+      "from": "demo_evidence_loop",
+      "to": "demo_conformance",
+      "label": "implements",
+      "id": 17
+    },
+    {
+      "from": "demo_spine_a",
+      "to": "demo_conformance",
+      "label": "targets",
+      "id": 18
+    },
+    {
+      "from": "demo_spine_b",
+      "to": "demo_build_pipeline",
+      "label": "contains",
+      "id": 19
+    },
+    {
+      "from": "demo_build_pipeline",
+      "to": "demo_stabilization",
+      "label": "produces",
+      "id": 20
+    },
+    {
+      "from": "demo_build_pipeline",
+      "to": "demo_golden_run",
+      "label": "produces",
+      "id": 21
+    },
+    {
+      "from": "demo_build_pipeline",
+      "to": "demo_audio_analysis",
+      "label": "produces",
+      "id": 22
+    },
+    {
+      "from": "demo_build_pipeline",
+      "to": "demo_curation",
+      "label": "implements",
+      "id": 23
+    },
+    {
+      "from": "demo_spine_b",
+      "to": "demo_curation",
+      "label": "targets",
+      "id": 24
+    },
+    {
+      "from": "demo_bridge_1",
+      "to": "demo_lib_1",
+      "label": "bridges",
+      "dashes": true,
+      "id": 25
+    },
+    {
+      "from": "demo_bridge_1",
+      "to": "demo_lib_8",
+      "label": "bridges",
+      "dashes": true,
+      "id": 26
+    },
+    {
+      "from": "demo_bridge_2",
+      "to": "demo_lib_2",
+      "label": "bridges",
+      "dashes": true,
+      "id": 27
+    },
+    {
+      "from": "demo_bridge_2",
+      "to": "demo_arc_5",
+      "label": "bridges",
+      "dashes": true,
+      "id": 28
+    },
+    {
+      "from": "demo_bridge_3",
+      "to": "demo_lib_3",
+      "label": "bridges",
+      "dashes": true,
+      "id": 29
+    },
+    {
+      "from": "demo_bridge_3",
+      "to": "demo_lib_9",
+      "label": "bridges",
+      "dashes": true,
+      "id": 30
+    },
+    {
+      "from": "demo_bridge_4",
+      "to": "demo_lib_5",
+      "label": "bridges",
+      "dashes": true,
+      "id": 31
+    },
+    {
+      "from": "demo_bridge_4",
+      "to": "demo_lib_7",
+      "label": "bridges",
+      "dashes": true,
+      "id": 32
+    },
+    {
+      "from": "demo_bridge_5",
+      "to": "demo_lib_6",
+      "label": "bridges",
+      "dashes": true,
+      "id": 33
+    },
+    {
+      "from": "demo_bridge_5",
+      "to": "demo_build_pipeline",
+      "label": "bridges",
+      "dashes": true,
+      "id": 34
+    },
+    {
+      "from": "demo_lib_8",
+      "to": "demo_lib_10",
+      "label": "axis_with",
+      "dashes": true,
+      "color": {
+        "color": "#7dd3fc"
+      },
+      "id": 35
+    },
+    {
+      "from": "demo_lib_7",
+      "to": "demo_lib_3",
+      "label": "axis_with",
+      "dashes": true,
+      "color": {
+        "color": "#7dd3fc"
+      },
+      "id": 36
+    },
+    {
+      "from": "demo_lib_2",
+      "to": "demo_lib_9",
+      "label": "axis_with",
+      "dashes": true,
+      "color": {
+        "color": "#7dd3fc"
+      },
+      "id": 37
+    },
+    {
+      "from": "demo_lib_1",
+      "to": "demo_bridge_1",
+      "label": "axis_with",
+      "dashes": true,
+      "color": {
+        "color": "#7dd3fc"
+      },
+      "id": 38
+    },
+    {
+      "from": "demo_mission",
+      "to": "demo_research",
+      "label": "informed_by",
+      "id": 39
+    },
+    {
+      "from": "demo_mission",
+      "to": "demo_brand",
+      "label": "expressed_as",
+      "id": 40
+    },
+    {
+      "from": "demo_mission",
+      "to": "demo_products",
+      "label": "applied_in",
+      "id": 41
+    },
+    {
+      "from": "demo_mission",
+      "to": "demo_presence_hub",
+      "label": "expressed_through",
+      "id": 42
+    },
+    {
+      "from": "demo_brand",
+      "to": "demo_presence_hub",
+      "label": "unifies",
+      "id": 43
+    },
+    {
+      "from": "demo_presence",
+      "to": "demo_presence_hub",
+      "label": "integrates",
+      "id": 44
+    },
+    {
+      "from": "demo_presence_hub",
+      "to": "demo_facebook",
+      "label": "includes",
+      "id": 45
+    },
+    {
+      "from": "demo_presence_hub",
+      "to": "demo_linkedin",
+      "label": "includes",
+      "id": 46
+    },
+    {
+      "from": "demo_presence_hub",
+      "to": "demo_web",
+      "label": "includes",
+      "id": 47
+    },
+    {
+      "from": "demo_presence_hub",
+      "to": "demo_presence",
+      "label": "includes",
+      "dashes": true,
+      "id": 48
+    },
+    {
+      "from": "demo_brand",
+      "to": "demo_facebook",
+      "label": "published_on",
+      "dashes": true,
+      "id": 49
+    },
+    {
+      "from": "demo_presence",
+      "to": "demo_facebook",
+      "label": "cross_presence",
+      "dashes": true,
+      "id": 50
+    },
+    {
+      "from": "demo_brand",
+      "to": "demo_linkedin",
+      "label": "published_on",
+      "dashes": true,
+      "id": 51
+    },
+    {
+      "from": "demo_presence",
+      "to": "demo_linkedin",
+      "label": "cross_presence",
+      "dashes": true,
+      "id": 52
+    },
+    {
+      "from": "demo_brand",
+      "to": "demo_web",
+      "label": "published_on",
+      "dashes": true,
+      "id": 53
+    },
+    {
+      "from": "demo_mission",
+      "to": "demo_web",
+      "label": "expressed_through",
+      "dashes": true,
+      "id": 54
+    },
+    {
+      "from": "demo_web",
+      "to": "demo_brand",
       "label": "hosts_assets",
-      "dashes": true
+      "dashes": true,
+      "id": 55
     },
     {
-      "id": 56,
-      "from": "letapata",
-      "to": "mission",
-      "label": "stewards"
+      "from": "demo_steward",
+      "to": "demo_mission",
+      "label": "stewards",
+      "id": 56
     },
     {
-      "id": 57,
-      "from": "letapata",
-      "to": "channel",
-      "label": "creates/curates"
+      "from": "demo_steward",
+      "to": "demo_presence",
+      "label": "creates_curates",
+      "id": 57
     },
     {
-      "id": 58,
-      "from": "letapata",
-      "to": "brand",
-      "label": "associated_with"
+      "from": "demo_steward",
+      "to": "demo_brand",
+      "label": "associated_with",
+      "id": 58
     },
     {
-      "id": 59,
-      "from": "letapata",
-      "to": "presence",
-      "label": "represented_in"
+      "from": "demo_steward",
+      "to": "demo_presence_hub",
+      "label": "represented_in",
+      "id": 59
     },
     {
-      "id": 60,
-      "from": "letapata",
-      "to": "facebook",
+      "from": "demo_steward",
+      "to": "demo_facebook",
       "label": "presence_on",
-      "dashes": true
+      "dashes": true,
+      "id": 60
     },
     {
-      "id": 61,
-      "from": "letapata",
-      "to": "linkedin",
+      "from": "demo_steward",
+      "to": "demo_linkedin",
       "label": "presence_on",
-      "dashes": true
+      "dashes": true,
+      "id": 61
     },
     {
-      "id": 62,
-      "from": "letapata",
-      "to": "web",
+      "from": "demo_steward",
+      "to": "demo_web",
       "label": "presence_on",
-      "dashes": true
+      "dashes": true,
+      "id": 62
     },
     {
-      "id": 63,
-      "from": "letapata",
-      "to": "runtime",
+      "from": "demo_steward",
+      "to": "demo_runtime",
       "label": "operates",
-      "dashes": true
+      "dashes": true,
+      "id": 63
     },
     {
-      "id": 64,
-      "from": "mission",
-      "to": "runtime",
-      "label": "runs_on"
+      "from": "demo_mission",
+      "to": "demo_runtime",
+      "label": "runs_on",
+      "id": 64
     },
     {
-      "id": 65,
-      "from": "runtime",
-      "to": "svc_opencode",
-      "label": "runs"
+      "from": "demo_runtime",
+      "to": "demo_svc_opencode",
+      "label": "runs",
+      "id": 65
     },
     {
-      "id": 66,
-      "from": "runtime",
-      "to": "svc_fs",
-      "label": "runs"
+      "from": "demo_runtime",
+      "to": "demo_svc_fs",
+      "label": "runs",
+      "id": 66
     },
     {
-      "id": 67,
-      "from": "runtime",
-      "to": "svc_llm",
-      "label": "runs"
+      "from": "demo_runtime",
+      "to": "demo_svc_llm",
+      "label": "runs",
+      "id": 67
     },
     {
-      "id": 68,
-      "from": "runtime",
-      "to": "svc_alpha",
-      "label": "runs"
+      "from": "demo_runtime",
+      "to": "demo_svc_alpha",
+      "label": "runs",
+      "id": 68
     },
     {
-      "id": 69,
-      "from": "runtime",
-      "to": "svc_voice",
-      "label": "runs"
+      "from": "demo_runtime",
+      "to": "demo_svc_voice",
+      "label": "runs",
+      "id": 69
     },
     {
-      "id": 70,
-      "from": "runtime",
-      "to": "svc_driver",
-      "label": "runs"
+      "from": "demo_runtime",
+      "to": "demo_svc_driver",
+      "label": "runs",
+      "id": 70
     },
     {
-      "id": 71,
-      "from": "svc_opencode",
-      "to": "svc_fs",
-      "label": "uses"
+      "from": "demo_svc_opencode",
+      "to": "demo_svc_fs",
+      "label": "uses",
+      "id": 71
     },
     {
-      "id": 72,
-      "from": "svc_opencode",
-      "to": "svc_llm",
-      "label": "can_use"
+      "from": "demo_svc_opencode",
+      "to": "demo_svc_llm",
+      "label": "can_use",
+      "id": 72
     },
     {
-      "id": 73,
-      "from": "runtime",
-      "to": "spineA",
+      "from": "demo_runtime",
+      "to": "demo_spine_a",
       "label": "supports",
-      "dashes": true
+      "dashes": true,
+      "id": 73
     },
     {
-      "id": 74,
-      "from": "runtime",
-      "to": "spineB",
+      "from": "demo_runtime",
+      "to": "demo_spine_b",
       "label": "supports",
-      "dashes": true
+      "dashes": true,
+      "id": 74
     },
     {
-      "id": 75,
-      "from": "svc_opencode",
-      "to": "plan",
+      "from": "demo_svc_opencode",
+      "to": "demo_plan",
       "label": "enables",
-      "dashes": true
+      "dashes": true,
+      "id": 75
     },
     {
-      "id": 76,
-      "from": "svc_opencode",
-      "to": "gov_reports",
+      "from": "demo_svc_opencode",
+      "to": "demo_reports",
       "label": "works_on",
-      "dashes": true
+      "dashes": true,
+      "id": 76
     },
     {
-      "id": 77,
-      "from": "svc_opencode",
-      "to": "cur_pipeline",
+      "from": "demo_svc_opencode",
+      "to": "demo_build_pipeline",
       "label": "works_on",
-      "dashes": true
+      "dashes": true,
+      "id": 77
     },
     {
-      "id": 78,
-      "from": "svc_alpha",
-      "to": "prods",
-      "label": "related_to"
+      "from": "demo_svc_alpha",
+      "to": "demo_products",
+      "label": "related_to",
+      "id": 78
     },
     {
-      "id": 79,
-      "from": "svc_voice",
-      "to": "prods",
-      "label": "related_to"
+      "from": "demo_svc_voice",
+      "to": "demo_products",
+      "label": "related_to",
+      "id": 79
     },
     {
-      "id": 80,
-      "from": "conformance",
-      "to": "curation",
+      "from": "demo_conformance",
+      "to": "demo_curation",
       "label": "harmonizes_with",
       "dashes": true,
       "color": {
         "color": "#a78bfa"
-      }
+      },
+      "id": 80
     },
     {
-      "id": 81,
-      "from": "plan",
-      "to": "state",
+      "from": "demo_plan",
+      "to": "demo_state",
       "label": "governs",
-      "dashes": true
+      "dashes": true,
+      "id": 81
     },
     {
-      "id": 82,
-      "from": "presence",
-      "to": "prods",
+      "from": "demo_presence_hub",
+      "to": "demo_products",
       "label": "amplifies",
-      "dashes": true
+      "dashes": true,
+      "id": 82
     },
     {
-      "id": 83,
-      "from": "mission",
-      "to": "state",
-      "label": "has_state"
+      "from": "demo_mission",
+      "to": "demo_state",
+      "label": "has_state",
+      "id": 83
     },
     {
-      "id": 84,
-      "from": "state",
-      "to": "ev_loop",
-      "label": "tracks"
+      "from": "demo_state",
+      "to": "demo_evidence_loop",
+      "label": "tracks",
+      "id": 84
     },
     {
-      "id": 85,
-      "from": "state",
-      "to": "cur_pipeline",
-      "label": "tracks"
+      "from": "demo_state",
+      "to": "demo_build_pipeline",
+      "label": "tracks",
+      "id": 85
     },
     {
-      "id": 86,
-      "from": "state",
-      "to": "L7",
-      "label": "prioritises"
+      "from": "demo_state",
+      "to": "demo_lib_7",
+      "label": "prioritises",
+      "id": 86
     },
     {
-      "id": 87,
-      "from": "state",
-      "to": "L8",
-      "label": "prioritises"
+      "from": "demo_state",
+      "to": "demo_lib_8",
+      "label": "prioritises",
+      "id": 87
     },
     {
-      "id": 88,
-      "from": "state",
-      "to": "L9",
-      "label": "prioritises"
+      "from": "demo_state",
+      "to": "demo_lib_9",
+      "label": "prioritises",
+      "id": 88
     },
     {
-      "id": 89,
-      "from": "state",
-      "to": "L10",
-      "label": "prioritises"
+      "from": "demo_state",
+      "to": "demo_lib_10",
+      "label": "prioritises",
+      "id": 89
     },
     {
-      "from": "SYN",
-      "to": "curation",
+      "from": "demo_syn",
+      "to": "demo_curation",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1108,8 +1115,8 @@ window.GRAPH_DATA = {
       "id": 90
     },
     {
-      "from": "SYN",
-      "to": "conformance",
+      "from": "demo_syn",
+      "to": "demo_conformance",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1118,8 +1125,8 @@ window.GRAPH_DATA = {
       "id": 91
     },
     {
-      "from": "SYN",
-      "to": "cur_pipeline",
+      "from": "demo_syn",
+      "to": "demo_build_pipeline",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1128,8 +1135,8 @@ window.GRAPH_DATA = {
       "id": 92
     },
     {
-      "from": "SYN",
-      "to": "mi18_demo",
+      "from": "demo_syn",
+      "to": "demo_demonstrator",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1138,8 +1145,8 @@ window.GRAPH_DATA = {
       "id": 93
     },
     {
-      "from": "SYN",
-      "to": "X2",
+      "from": "demo_syn",
+      "to": "demo_bridge_2",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1148,8 +1155,8 @@ window.GRAPH_DATA = {
       "id": 94
     },
     {
-      "from": "SYN",
-      "to": "X5",
+      "from": "demo_syn",
+      "to": "demo_bridge_5",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1158,8 +1165,8 @@ window.GRAPH_DATA = {
       "id": 95
     },
     {
-      "from": "SYN",
-      "to": "T05",
+      "from": "demo_syn",
+      "to": "demo_arc_5",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1168,8 +1175,8 @@ window.GRAPH_DATA = {
       "id": 96
     },
     {
-      "from": "SYN",
-      "to": "letapata",
+      "from": "demo_syn",
+      "to": "demo_steward",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1178,8 +1185,8 @@ window.GRAPH_DATA = {
       "id": 97
     },
     {
-      "from": "SYN",
-      "to": "runtime",
+      "from": "demo_syn",
+      "to": "demo_runtime",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1188,8 +1195,8 @@ window.GRAPH_DATA = {
       "id": 98
     },
     {
-      "from": "SYN",
-      "to": "L3",
+      "from": "demo_syn",
+      "to": "demo_lib_3",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1198,8 +1205,8 @@ window.GRAPH_DATA = {
       "id": 99
     },
     {
-      "from": "SYN",
-      "to": "L9",
+      "from": "demo_syn",
+      "to": "demo_lib_9",
       "label": "best_synergy",
       "dashes": true,
       "color": {
@@ -1208,8 +1215,8 @@ window.GRAPH_DATA = {
       "id": 100
     },
     {
-      "from": "TEN",
-      "to": "ev_loop",
+      "from": "demo_ten",
+      "to": "demo_evidence_loop",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1218,8 +1225,8 @@ window.GRAPH_DATA = {
       "id": 101
     },
     {
-      "from": "TEN",
-      "to": "src_notice",
+      "from": "demo_ten",
+      "to": "demo_source_b",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1228,8 +1235,8 @@ window.GRAPH_DATA = {
       "id": 102
     },
     {
-      "from": "TEN",
-      "to": "src_csirt",
+      "from": "demo_ten",
+      "to": "demo_source_a",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1238,8 +1245,8 @@ window.GRAPH_DATA = {
       "id": 103
     },
     {
-      "from": "TEN",
-      "to": "cur_pipeline",
+      "from": "demo_ten",
+      "to": "demo_build_pipeline",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1248,8 +1255,8 @@ window.GRAPH_DATA = {
       "id": 104
     },
     {
-      "from": "TEN",
-      "to": "L1",
+      "from": "demo_ten",
+      "to": "demo_lib_1",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1258,8 +1265,8 @@ window.GRAPH_DATA = {
       "id": 105
     },
     {
-      "from": "TEN",
-      "to": "L4",
+      "from": "demo_ten",
+      "to": "demo_lib_4",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1268,8 +1275,8 @@ window.GRAPH_DATA = {
       "id": 106
     },
     {
-      "from": "TEN",
-      "to": "X4",
+      "from": "demo_ten",
+      "to": "demo_bridge_4",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1278,8 +1285,8 @@ window.GRAPH_DATA = {
       "id": 107
     },
     {
-      "from": "TEN",
-      "to": "mission",
+      "from": "demo_ten",
+      "to": "demo_mission",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1288,8 +1295,8 @@ window.GRAPH_DATA = {
       "id": 108
     },
     {
-      "from": "TEN",
-      "to": "svc_llm",
+      "from": "demo_ten",
+      "to": "demo_svc_llm",
       "label": "tension_risk",
       "dashes": true,
       "color": {
@@ -1298,8 +1305,8 @@ window.GRAPH_DATA = {
       "id": 109
     },
     {
-      "from": "POT",
-      "to": "linkedin",
+      "from": "demo_pot",
+      "to": "demo_linkedin",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1308,8 +1315,8 @@ window.GRAPH_DATA = {
       "id": 110
     },
     {
-      "from": "POT",
-      "to": "facebook",
+      "from": "demo_pot",
+      "to": "demo_facebook",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1318,8 +1325,8 @@ window.GRAPH_DATA = {
       "id": 111
     },
     {
-      "from": "POT",
-      "to": "web",
+      "from": "demo_pot",
+      "to": "demo_web",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1328,8 +1335,8 @@ window.GRAPH_DATA = {
       "id": 112
     },
     {
-      "from": "POT",
-      "to": "svc_alpha",
+      "from": "demo_pot",
+      "to": "demo_svc_alpha",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1338,8 +1345,8 @@ window.GRAPH_DATA = {
       "id": 113
     },
     {
-      "from": "POT",
-      "to": "svc_voice",
+      "from": "demo_pot",
+      "to": "demo_svc_voice",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1348,8 +1355,8 @@ window.GRAPH_DATA = {
       "id": 114
     },
     {
-      "from": "POT",
-      "to": "L8",
+      "from": "demo_pot",
+      "to": "demo_lib_8",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1358,8 +1365,8 @@ window.GRAPH_DATA = {
       "id": 115
     },
     {
-      "from": "POT",
-      "to": "L10",
+      "from": "demo_pot",
+      "to": "demo_lib_10",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1368,8 +1375,8 @@ window.GRAPH_DATA = {
       "id": 116
     },
     {
-      "from": "POT",
-      "to": "X1",
+      "from": "demo_pot",
+      "to": "demo_bridge_1",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1378,8 +1385,8 @@ window.GRAPH_DATA = {
       "id": 117
     },
     {
-      "from": "POT",
-      "to": "X3",
+      "from": "demo_pot",
+      "to": "demo_bridge_3",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1388,8 +1395,8 @@ window.GRAPH_DATA = {
       "id": 118
     },
     {
-      "from": "POT",
-      "to": "prods",
+      "from": "demo_pot",
+      "to": "demo_products",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1398,8 +1405,8 @@ window.GRAPH_DATA = {
       "id": 119
     },
     {
-      "from": "POT",
-      "to": "R1",
+      "from": "demo_pot",
+      "to": "demo_rec_1",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1408,8 +1415,8 @@ window.GRAPH_DATA = {
       "id": 120
     },
     {
-      "from": "POT",
-      "to": "R2",
+      "from": "demo_pot",
+      "to": "demo_rec_2",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1418,8 +1425,8 @@ window.GRAPH_DATA = {
       "id": 121
     },
     {
-      "from": "POT",
-      "to": "R3",
+      "from": "demo_pot",
+      "to": "demo_rec_3",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1428,8 +1435,8 @@ window.GRAPH_DATA = {
       "id": 122
     },
     {
-      "from": "POT",
-      "to": "R4",
+      "from": "demo_pot",
+      "to": "demo_rec_4",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1438,8 +1445,8 @@ window.GRAPH_DATA = {
       "id": 123
     },
     {
-      "from": "POT",
-      "to": "R5",
+      "from": "demo_pot",
+      "to": "demo_rec_5",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1448,8 +1455,8 @@ window.GRAPH_DATA = {
       "id": 124
     },
     {
-      "from": "POT",
-      "to": "R6",
+      "from": "demo_pot",
+      "to": "demo_rec_6",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1458,8 +1465,8 @@ window.GRAPH_DATA = {
       "id": 125
     },
     {
-      "from": "POT",
-      "to": "T01",
+      "from": "demo_pot",
+      "to": "demo_arc_1",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1468,8 +1475,8 @@ window.GRAPH_DATA = {
       "id": 126
     },
     {
-      "from": "POT",
-      "to": "T12",
+      "from": "demo_pot",
+      "to": "demo_arc_12",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1478,8 +1485,8 @@ window.GRAPH_DATA = {
       "id": 127
     },
     {
-      "from": "POT",
-      "to": "L7",
+      "from": "demo_pot",
+      "to": "demo_lib_7",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1488,8 +1495,8 @@ window.GRAPH_DATA = {
       "id": 128
     },
     {
-      "from": "POT",
-      "to": "L9",
+      "from": "demo_pot",
+      "to": "demo_lib_9",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1498,8 +1505,8 @@ window.GRAPH_DATA = {
       "id": 129
     },
     {
-      "from": "POT",
-      "to": "X2",
+      "from": "demo_pot",
+      "to": "demo_bridge_2",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1508,8 +1515,8 @@ window.GRAPH_DATA = {
       "id": 130
     },
     {
-      "from": "POT",
-      "to": "X4",
+      "from": "demo_pot",
+      "to": "demo_bridge_4",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1518,8 +1525,8 @@ window.GRAPH_DATA = {
       "id": 131
     },
     {
-      "from": "POT",
-      "to": "X5",
+      "from": "demo_pot",
+      "to": "demo_bridge_5",
       "label": "potential_next",
       "dashes": true,
       "color": {
@@ -1528,8 +1535,8 @@ window.GRAPH_DATA = {
       "id": 132
     },
     {
-      "from": "LOOP",
-      "to": "ev_loop",
+      "from": "demo_loop",
+      "to": "demo_evidence_loop",
       "label": "feedback_loop",
       "dashes": true,
       "color": {
@@ -1538,8 +1545,8 @@ window.GRAPH_DATA = {
       "id": 133
     },
     {
-      "from": "LOOP",
-      "to": "plan",
+      "from": "demo_loop",
+      "to": "demo_plan",
       "label": "feedback_loop",
       "dashes": true,
       "color": {
@@ -1548,8 +1555,8 @@ window.GRAPH_DATA = {
       "id": 134
     },
     {
-      "from": "LOOP",
-      "to": "state",
+      "from": "demo_loop",
+      "to": "demo_state",
       "label": "feedback_loop",
       "dashes": true,
       "color": {
@@ -1558,8 +1565,8 @@ window.GRAPH_DATA = {
       "id": 135
     },
     {
-      "from": "LOOP",
-      "to": "curation",
+      "from": "demo_loop",
+      "to": "demo_curation",
       "label": "feedback_loop",
       "dashes": true,
       "color": {
@@ -1568,8 +1575,8 @@ window.GRAPH_DATA = {
       "id": 136
     },
     {
-      "from": "LOOP",
-      "to": "runtime",
+      "from": "demo_loop",
+      "to": "demo_runtime",
       "label": "feedback_loop",
       "dashes": true,
       "color": {
@@ -1578,8 +1585,8 @@ window.GRAPH_DATA = {
       "id": 137
     },
     {
-      "from": "LOOP",
-      "to": "cur_pipeline",
+      "from": "demo_loop",
+      "to": "demo_build_pipeline",
       "label": "feedback_loop",
       "dashes": true,
       "color": {
@@ -1588,8 +1595,8 @@ window.GRAPH_DATA = {
       "id": 138
     },
     {
-      "from": "mission",
-      "to": "L7",
+      "from": "demo_mission",
+      "to": "demo_lib_7",
       "label": "anchors",
       "dashes": true,
       "color": {
@@ -1598,8 +1605,8 @@ window.GRAPH_DATA = {
       "id": 139
     },
     {
-      "from": "mission",
-      "to": "L8",
+      "from": "demo_mission",
+      "to": "demo_lib_8",
       "label": "anchors",
       "dashes": true,
       "color": {
@@ -1608,8 +1615,8 @@ window.GRAPH_DATA = {
       "id": 140
     },
     {
-      "from": "letapata",
-      "to": "ev_loop",
+      "from": "demo_steward",
+      "to": "demo_evidence_loop",
       "label": "connects_all",
       "dashes": true,
       "color": {
@@ -1618,8 +1625,8 @@ window.GRAPH_DATA = {
       "id": 141
     },
     {
-      "from": "letapata",
-      "to": "cur_pipeline",
+      "from": "demo_steward",
+      "to": "demo_build_pipeline",
       "label": "connects_all",
       "dashes": true,
       "color": {
@@ -1628,8 +1635,8 @@ window.GRAPH_DATA = {
       "id": 142
     },
     {
-      "from": "letapata",
-      "to": "mi18_demo",
+      "from": "demo_steward",
+      "to": "demo_demonstrator",
       "label": "connects_all",
       "dashes": true,
       "color": {
@@ -1638,8 +1645,8 @@ window.GRAPH_DATA = {
       "id": 143
     },
     {
-      "from": "letapata",
-      "to": "curation",
+      "from": "demo_steward",
+      "to": "demo_curation",
       "label": "connects_all",
       "dashes": true,
       "color": {
@@ -1648,8 +1655,8 @@ window.GRAPH_DATA = {
       "id": 144
     },
     {
-      "from": "letapata",
-      "to": "conformance",
+      "from": "demo_steward",
+      "to": "demo_conformance",
       "label": "connects_all",
       "dashes": true,
       "color": {
@@ -1658,8 +1665,8 @@ window.GRAPH_DATA = {
       "id": 145
     },
     {
-      "from": "T01",
-      "to": "T02",
+      "from": "demo_arc_1",
+      "to": "demo_arc_2",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1668,8 +1675,8 @@ window.GRAPH_DATA = {
       "id": 146
     },
     {
-      "from": "T02",
-      "to": "T03",
+      "from": "demo_arc_2",
+      "to": "demo_arc_3",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1678,8 +1685,8 @@ window.GRAPH_DATA = {
       "id": 147
     },
     {
-      "from": "T03",
-      "to": "T04",
+      "from": "demo_arc_3",
+      "to": "demo_arc_4",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1688,8 +1695,8 @@ window.GRAPH_DATA = {
       "id": 148
     },
     {
-      "from": "T04",
-      "to": "T05",
+      "from": "demo_arc_4",
+      "to": "demo_arc_5",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1698,8 +1705,8 @@ window.GRAPH_DATA = {
       "id": 149
     },
     {
-      "from": "T05",
-      "to": "T06",
+      "from": "demo_arc_5",
+      "to": "demo_arc_6",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1708,8 +1715,8 @@ window.GRAPH_DATA = {
       "id": 150
     },
     {
-      "from": "T06",
-      "to": "T07",
+      "from": "demo_arc_6",
+      "to": "demo_arc_7",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1718,8 +1725,8 @@ window.GRAPH_DATA = {
       "id": 151
     },
     {
-      "from": "T07",
-      "to": "T08",
+      "from": "demo_arc_7",
+      "to": "demo_arc_8",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1728,8 +1735,8 @@ window.GRAPH_DATA = {
       "id": 152
     },
     {
-      "from": "T08",
-      "to": "T09",
+      "from": "demo_arc_8",
+      "to": "demo_arc_9",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1738,8 +1745,8 @@ window.GRAPH_DATA = {
       "id": 153
     },
     {
-      "from": "T09",
-      "to": "T10t",
+      "from": "demo_arc_9",
+      "to": "demo_arc_10",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1748,8 +1755,8 @@ window.GRAPH_DATA = {
       "id": 154
     },
     {
-      "from": "T10t",
-      "to": "T11",
+      "from": "demo_arc_10",
+      "to": "demo_arc_11",
       "label": "arc_next",
       "dashes": true,
       "color": {
@@ -1758,14 +1765,74 @@ window.GRAPH_DATA = {
       "id": 155
     },
     {
-      "from": "T11",
-      "to": "T12",
+      "from": "demo_arc_11",
+      "to": "demo_arc_12",
       "label": "arc_next",
       "dashes": true,
       "color": {
         "color": "rgba(251,191,36,.35)"
       },
       "id": 156
+    },
+    {
+      "from": "demo_metacognition",
+      "to": "demo_loop",
+      "label": "monitors",
+      "dashes": true,
+      "color": {
+        "color": "#f472b6"
+      },
+      "id": 157
+    },
+    {
+      "from": "demo_metacognition",
+      "to": "demo_evidence_loop",
+      "label": "monitors",
+      "dashes": true,
+      "color": {
+        "color": "#f472b6"
+      },
+      "id": 158
+    },
+    {
+      "from": "demo_metacognition",
+      "to": "demo_state",
+      "label": "updates",
+      "dashes": true,
+      "color": {
+        "color": "#f472b6"
+      },
+      "id": 159
+    },
+    {
+      "from": "demo_metacognition",
+      "to": "demo_plan",
+      "label": "steers",
+      "dashes": true,
+      "color": {
+        "color": "#f472b6"
+      },
+      "id": 160
+    },
+    {
+      "from": "demo_metacognition",
+      "to": "demo_conformance",
+      "label": "verifies",
+      "dashes": true,
+      "color": {
+        "color": "#f472b6"
+      },
+      "id": 161
+    },
+    {
+      "from": "demo_metacognition",
+      "to": "demo_curation",
+      "label": "verifies",
+      "dashes": true,
+      "color": {
+        "color": "#f472b6"
+      },
+      "id": 162
     }
   ]
 };
