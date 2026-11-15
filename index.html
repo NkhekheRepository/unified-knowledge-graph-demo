@@ -24,12 +24,18 @@ main{grid-column:1;grid-row:2;position:relative;min-width:0;min-height:0}#networ
 .quickbar{position:absolute;top:12px;left:12px;z-index:6;display:flex;gap:6px;flex-wrap:wrap;padding:6px 10px;border:1px solid var(--line);border-radius:10px;background:rgba(12,18,34,.7);max-width:900px}
 .quickbar .qbtn{padding:5px 9px;border-radius:8px;border:1px solid transparent;background:rgba(30,45,78,.5);color:var(--fg);font-size:11px;cursor:pointer}
 .quickbar .qbtn:hover{border-color:rgba(125,211,252,.4)}
+.focus-row{position:absolute;top:66px;left:12px;z-index:6;display:flex;gap:6px}
+.focus-btn{all:unset;padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:rgba(18,28,50,.82);color:var(--muted);font-size:11px;cursor:pointer}
+.focus-btn.active{background:#a78bfa;color:#080b16;border-color:transparent;font-weight:700}
 aside{grid-column:2;grid-row:2;border-left:1px solid var(--line);background:rgba(10,16,30,.55);backdrop-filter:blur(14px);padding:12px;overflow:auto;display:flex;flex-direction:column;gap:10px}
 .card{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:11px}
 .card h3{margin:0 0 7px;font-size:12px;color:#dfeaff}.small{color:var(--muted);font-size:12px;line-height:1.45}
 a:link,a:visited{color:var(--accent);text-decoration:none}
 .legend{display:grid;grid-template-columns:1fr 1fr;gap:6px}.card .idx{max-height:180px;overflow:auto}
 .tag{display:inline-block;padding:2px 6px;border-radius:999px;background:rgba(125,211,252,.12);font-size:10px;color:#bfeafe;margin-left:4px}
+.idx-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 7px;border-radius:8px;color:#eef4ff;font-size:12px;cursor:pointer}
+.idx-item:hover{background:rgba(125,211,252,.09)}
+.idx-item span{color:#8ca4c9;font-size:10px}
 .notice{border-color:#fbbf24}
 ul{margin:6px 0 0 16px;padding:0} li{margin:3px 0}
 </style>
@@ -51,7 +57,8 @@ ul{margin:6px 0 0 16px;padding:0} li{margin:3px 0}
   <main>
     <div id="network"></div>
     <div class="quickbar" id="quickbar"></div>
-    <div class="hud"><div class="stat"><b id="nCount">0</b> demo entities</div><div class="stat"><b id="eCount">0</b> demo relationships</div><div class="stat">Sample · not evidence · not live data</div></div>
+    <div class="focus-row"><button class="focus-btn active" data-mode="core">Core fabric</button><button class="focus-btn" data-mode="all">Explore all</button></div>
+    <div class="hud"><div class="stat"><b id="modeLabel">Core fabric</b> view</div><div class="stat"><b id="nCount">0</b> entities visible</div><div class="stat"><b id="eCount">0</b> relationships</div></div>
   </main>
   <aside>
     <div class="card notice"><h3>PUBLIC DEMO</h3><div class="small" style="color:#fde68a">A showcase only. No private data, URLs, credentials, runtime details or evidence state are included.</div></div>
@@ -67,21 +74,37 @@ const G={root:'#a78bfa',a:'#38bdf8',b:'#c084fc',lib:'#fbbf24',bridge:'#fb923c',a
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const DATA=window.GRAPH_DATA||{nodes:[],edges:[]};
 const nodesArr=DATA.nodes, edgesArr=DATA.edges;
-const allNodes=new vis.DataSet(nodesArr.map(n=>({...n,color:{background:G[n.group]||G.other,border:'rgba(255,255,255,.18)'},font:{color:'#eef4ff',size:12,face:'Inter',strokeWidth:3,strokeColor:'#05070d'},shadow:{enabled:true,color:'rgba(0,0,0,.35)',size:8,y:3},title:esc((n.label||'').replace(/\n/g,' ')),borderWidth:n.group==='art'?2:1.5})));
+const allNodes=new vis.DataSet(nodesArr.map(n=>{const key=['mission','spine-a','spine-b','evidence-loop','build-pipeline','presence','community','runtime','metacognition'].includes(n.id);return{...n,color:{background:G[n.group]||G.other,border:'rgba(255,255,255,.18)'},font:{color:'#eef4ff',size:key?11:0,face:'Inter',strokeWidth:3,strokeColor:'#05070d'},shadow:{enabled:true,color:'rgba(0,0,0,.35)',size:8,y:3},title:esc((n.label||'').replace(/\n/g,' ')),borderWidth:n.group==='art'?2:1.5}}));
 const allEdges=new vis.DataSet(edgesArr.map((e,i)=>({id:i,...e,arrows:{to:{enabled:true,scaleFactor:0.55}},width:e.label==='best_synergy'?3:1.2,font:{size:0},smooth:{type:'continuous',roundness:0.35},color:{color:({best_synergy:'rgba(52,211,153,.75)',tension_risk:'rgba(251,113,133,.75)',potential_next:'rgba(251,191,36,.6)',feedback_loop:'rgba(167,139,250,.6)',arc_next:'rgba(251,191,36,.35)'}[e.label])||'rgba(140,170,210,.35)'}})));
-const network=new vis.Network(document.getElementById('network'),{nodes:allNodes,edges:allEdges},{nodes:{shape:'dot',scaling:{min:10,max:32,label:{enabled:true}}},interaction:{hover:true,multiselect:false,keyboard:{enabled:true}},physics:{enabled:true,solver:'forceAtlas2Based',forceAtlas2Based:{gravitationalConstant:-55,centralGravity:0.012,springLength:140,springConstant:0.05,damping:0.5,avoidOverlap:0.7},stabilization:{iterations:350,fit:true}}});
+const network=new vis.Network(document.getElementById('network'),{nodes:allNodes,edges:allEdges},{layout:{randomSeed:7,improvedLayout:false},nodes:{shape:'dot',scaling:{min:14,max:30,label:{enabled:false}}},interaction:{hover:true,multiselect:false,keyboard:{enabled:true},dragNodes:true},physics:{enabled:true,solver:'forceAtlas2Based',forceAtlas2Based:{gravitationalConstant:-10,centralGravity:0.01,springLength:120,springConstant:0.01,damping:0.9,avoidOverlap:2},stabilization:{iterations:5,fit:true}}});
 document.getElementById('nCount').textContent=allNodes.length; document.getElementById('eCount').textContent=allEdges.length;
-const jumpWrap=document.getElementById('quickbar'); const jumpIds=['demo_mission','demo_spine_a','demo_spine_b','demo_lib_7','demo_analysis_loop','demo_build_pipeline','demo_rec_1','demo_arc_1','demo_runtime','demo_presence_hub','demo_syn','demo_ten','demo_pot','demo_loop'];
-const jumpLabels={demo_mission:'Home',demo_spine_a:'Spine A',demo_spine_b:'Spine B',demo_lib_7:'Latest',demo_analysis_loop:'Evidence loop',demo_build_pipeline:'Build pipeline',demo_rec_1:'Music',demo_arc_1:'Timeline',demo_runtime:'Runtime',demo_presence_hub:'Presence',demo_syn:'Best connections',demo_ten:'Weakest connections',demo_pot:'Potential',demo_loop:'Feedback loops'};
+const jumpWrap=document.getElementById('quickbar'); const jumpIds=['mission','spine-a','spine-b','lib-07','evidence-loop','build-pipeline','arc-01','runtime','presence','best-synergy','weak-links','potential-links','feedback-loops'];
+const jumpLabels={mission:'Home','spine-a':'Spine A · Trust','spine-b':'Spine B · Signal','lib-07':'Complex systems','evidence-loop':'Evidence loop','build-pipeline':'Build pipeline','arc-01':'Journey arc',runtime:'Runtime',presence:'Presence','best-synergy':'Strongest connections','weak-links':'Weakest connections','potential-links':'Potential connections','feedback-loops':'Feedback loops'};
 for(const id of jumpIds){ if(!nodesArr.find(n=>n.id===id)) continue; const b=document.createElement('button'); b.className='qbtn'; b.textContent=jumpLabels[id]||id; b.onclick=()=>{network.selectNodes([id]);network.focus(id,{scale:1.2,animation:true});showNode(id);}; jumpWrap.appendChild(b);}
 const idxFilter=document.getElementById('idxFilter'); const indexList=document.getElementById('indexList');
 function renderIndex(f=''){ const q=f.toLowerCase(); const items=nodesArr.filter(n=>!q||((n.label||'')+' '+n.id).toLowerCase().includes(q)); indexList.innerHTML=items.map(n=>'<div class="idx-item" data-id="'+esc(n.id)+'"><div>'+esc((n.label||'').replace(/\n/g,' '))+'</div><span>'+esc(n.group)+'</span></div>').join('')||'<div class="small">No matches</div>'; Array.from(indexList.querySelectorAll('.idx-item')).forEach(el=>el.onclick=()=>{const id=el.dataset.id;network.selectNodes([id]);network.focus(id,{scale:1.2,animation:true});showNode(id);}); }
 const info=document.getElementById('info');
 function showNode(id){ const n=allNodes.get(id); if(!n) return; const rels=network.getConnectedEdges(id).map(eid=>{const e=allEdges.get(eid);const other=e.from===id?e.to:e.from;return '<li><code>'+esc(e.label)+'</code> → '+esc((allNodes.get(other).label||'').replace(/\n/g,' '))+'</li>';}).join(''); info.innerHTML='<div><b>'+esc((n.label||'').replace(/\n/g,' '))+'</b> <span class="small">('+esc(n.group)+')</span></div><div class="small" style="margin-top:4px">'+esc(n.detail||'')+'</div>'+(n.url?'<div style="margin-top:4px"><a href="'+esc(n.url)+'" target="_blank" rel="noopener">Open link</a></div>':'')+'<div style="margin-top:6px" class="small"><b>Relationships</b></div><ul class="small">'+(rels||'<li>none</li>')+'</ul>'; }
 network.on('selectNode',p=>{if(p.nodes.length)showNode(p.nodes[0])}); network.on('selectEdge',p=>{if(!p.edges.length)return;const e=allEdges.get(p.edges[0]);const a=allNodes.get(e.from),b=allNodes.get(e.to);info.innerHTML='<b>Relationship</b><div style="margin-top:6px">'+esc((a.label||e.from))+' → <code>'+esc(e.label)+'</code> → '+esc((b.label||e.to))+'</div>';});
+const coreIds=new Set(['mission','steward','operating-model','cadence','current-state','spine-a','spine-b','signal','curation','conformance','evidence-loop','verifier','monitoring','build-pipeline','runtime','presence','community','brand','best-synergy','weak-links','potential-links','feedback-loops','metacognition']);
+let currentMode='core';
+function showMode(mode){
+  currentMode=mode;
+  document.querySelectorAll('.focus-btn').forEach(b=>b.classList.toggle('active',b.dataset.mode===mode));
+  const hideId=(id)=>mode==='core' && !coreIds.has(id);
+  allNodes.update(nodesArr.map(n=>({id:n.id,hidden:hideId(n.id)})));
+  allEdges.update(edgesArr.map((e,i)=>({id:i,hidden:hideId(e.from)||hideId(e.to)})));
+  document.getElementById('modeLabel').textContent=mode==='core'?'Core fabric':'Full fabric';
+  document.getElementById('nCount').textContent=nodesArr.filter(n=>!hideId(n.id)).length;
+  document.getElementById('eCount').textContent=edgesArr.filter(e=>!hideId(e.from)&&!hideId(e.to)).length;
+  network.moveTo({ position: { x: 0, y: 0 }, scale: 0.65, animation: false });
+}
+document.querySelectorAll('.focus-btn').forEach(btn=>btn.addEventListener('click',()=>showMode(btn.dataset.mode)));
+showMode('core');
+
 renderIndex(''); idxFilter.addEventListener('input',e=>renderIndex(e.target.value));
-document.getElementById('fit').onclick=()=>network.fit({animation:true}); document.getElementById('reset').onclick=()=>{idxFilter.value='';renderIndex('');network.unselectAll();network.fit({animation:true});info.innerHTML='Select a node or relationship.';};
-document.getElementById('q').addEventListener('input',e=>{const t=e.target.value.trim().toLowerCase();if(!t){allNodes.update(nodesArr.map(n=>({id:n.id,opacity:1})));return;}const match=new Set(nodesArr.filter(n=>((n.label||'')+' '+(n.detail||'')).toLowerCase().includes(t)).map(n=>n.id));allNodes.update(nodesArr.map(n=>({id:n.id,opacity:match.has(n.id)?1:0.12}))); if(match.size===1){const id=[...match][0];network.selectNodes([id]);network.focus(id,{scale:1.2,animation:true});showNode(id);}});
+document.getElementById('fit').onclick=()=>network.fit({animation:true}); document.getElementById('reset').onclick=()=>{idxFilter.value='';renderIndex('');network.unselectAll();showMode('core');info.innerHTML='Select a node or relationship.';};
+document.getElementById('q').addEventListener('input',e=>{const t=e.target.value.trim().toLowerCase(); if(t && currentMode==='core') showMode('all');if(!t){allNodes.update(nodesArr.map(n=>({id:n.id,opacity:1})));return;}const match=new Set(nodesArr.filter(n=>((n.label||'')+' '+(n.detail||'')).toLowerCase().includes(t)).map(n=>n.id));allNodes.update(nodesArr.map(n=>({id:n.id,opacity:match.has(n.id)?1:0.12}))); if(match.size===1){const id=[...match][0];network.selectNodes([id]);network.focus(id,{scale:1.2,animation:true});showNode(id);}});
 document.getElementById('exportBtn').onclick=()=>{const payload={meta:{generated:new Date().toISOString(),title:'Public Demo — Unified Knowledge Graph',nodes:nodesArr.length,edges:edgesArr.length},nodes:nodesArr,edges:edgesArr};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='unified-knowledge-graph-demo.json';a.click();URL.revokeObjectURL(a.href);};
 </script>
 </body>

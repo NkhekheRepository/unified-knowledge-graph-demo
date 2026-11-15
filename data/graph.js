@@ -1,1838 +1,1592 @@
 window.GRAPH_DATA = {
-  "source": "Public demo — fictional/sanitized representation of a knowledge system (not real project data)",
-  "generated": "2026-11-15T16:13:09.462Z",
+  "source": "Public demo — fictional, meaningful, non-private sample graph",
+  "generated": "2026-11-15T16:39:43.570Z",
   "nodes": [
     {
-      "id": "demo_mission",
-      "label": "Public demo node",
+      "id": "mission",
+      "label": "Mission",
       "group": "root",
       "value": 30,
-      "detail": "Sanitized public demo entity (group root). See README for scope and limits."
+      "detail": "North star: steward a living commons by making trustworthy knowledge usable.",
+      "x": 0,
+      "y": 0,
+      "fixed": true
     },
     {
-      "id": "demo_presence",
-      "label": "Public demo node",
+      "id": "steward",
+      "label": "Steward",
       "group": "root",
       "value": 22,
-      "detail": "Sanitized public demo entity (group root). See README for scope and limits."
+      "detail": "Human perspective: observe, decide, act, reflect.",
+      "x": -210,
+      "y": 176.4,
+      "fixed": true
     },
     {
-      "id": "demo_operating_model",
-      "label": "Public demo node",
+      "id": "operating-model",
+      "label": "Operating Model",
       "group": "root",
-      "value": 16,
-      "detail": "Sanitized public demo entity (group root). See README for scope and limits."
-    },
-    {
-      "id": "demo_plan",
-      "label": "Public demo node",
-      "group": "art",
       "value": 18,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
+      "detail": "Cadence, priorities, feedback loops and decision rules.",
+      "x": -252,
+      "y": -84,
+      "fixed": true
     },
     {
-      "id": "demo_spine_a",
-      "label": "Public demo node",
+      "id": "cadence",
+      "label": "60-Day Cadence",
+      "group": "art",
+      "value": 16,
+      "detail": "Rhythmic plan that turns learning into action.",
+      "x": -302.40000000000003,
+      "y": -176.4,
+      "fixed": true
+    },
+    {
+      "id": "current-state",
+      "label": "Current State",
+      "group": "art",
+      "value": 15,
+      "detail": "Snapshot of priorities, progress and decisions.",
+      "x": -184.8,
+      "y": -210,
+      "fixed": true
+    },
+    {
+      "id": "spine-a",
+      "label": "Spine A · Trust",
       "group": "a",
       "value": 26,
-      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
+      "detail": "Governance, verification, controls and accountability.",
+      "x": -151.20000000000002,
+      "y": 33.6,
+      "fixed": true
     },
     {
-      "id": "demo_reports",
-      "label": "Public demo node",
-      "group": "a",
-      "value": 18,
-      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
-    },
-    {
-      "id": "demo_conformance_map",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 16,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_spec_loop",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 15,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_analysis_loop",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 20,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_demonstrator",
-      "label": "Public demo node",
-      "group": "a",
-      "value": 15,
-      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
-    },
-    {
-      "id": "demo_source_a",
-      "label": "Public demo node",
-      "group": "a",
-      "value": 13,
-      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
-    },
-    {
-      "id": "demo_source_b",
-      "label": "Public demo node",
-      "group": "a",
-      "value": 13,
-      "detail": "Sanitized public demo entity (group a). See README for scope and limits."
-    },
-    {
-      "id": "demo_spine_b",
-      "label": "Public demo node",
+      "id": "spine-b",
+      "label": "Spine B · Signal",
       "group": "b",
       "value": 26,
-      "detail": "Sanitized public demo entity (group b). See README for scope and limits."
+      "detail": "Curation, sequence, provenance and public value.",
+      "x": 151.20000000000002,
+      "y": 33.6,
+      "fixed": true
     },
     {
-      "id": "demo_build_pipeline",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 20,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_stabilization",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 13,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_golden_run",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 13,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_audio_analysis",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 13,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_1",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_2",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_3",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_4",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_5",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_6",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_7",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 16,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_8",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 16,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_9",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 16,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_lib_10",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 16,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_bridge_1",
-      "label": "Public demo node",
-      "group": "bridge",
-      "value": 12,
-      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
-    },
-    {
-      "id": "demo_bridge_2",
-      "label": "Public demo node",
-      "group": "bridge",
-      "value": 12,
-      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
-    },
-    {
-      "id": "demo_bridge_3",
-      "label": "Public demo node",
-      "group": "bridge",
-      "value": 12,
-      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
-    },
-    {
-      "id": "demo_bridge_4",
-      "label": "Public demo node",
-      "group": "bridge",
-      "value": 12,
-      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
-    },
-    {
-      "id": "demo_bridge_5",
-      "label": "Public demo node",
-      "group": "bridge",
-      "value": 12,
-      "detail": "Sanitized public demo entity (group bridge). See README for scope and limits."
-    },
-    {
-      "id": "demo_rec_1",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 11,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_rec_2",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 11,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_rec_3",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 11,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_rec_4",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 11,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_rec_5",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 11,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_rec_6",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 11,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_1",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_2",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_3",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_4",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_5",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_6",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_7",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_8",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_9",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_10",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_11",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_arc_12",
-      "label": "Public demo node",
-      "group": "lib",
-      "value": 10,
-      "detail": "Sanitized public demo entity (group lib). See README for scope and limits."
-    },
-    {
-      "id": "demo_conformance",
-      "label": "Public demo node",
+      "id": "signal",
+      "label": "Signal",
       "group": "concept",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
-    },
-    {
-      "id": "demo_curation",
-      "label": "Public demo node",
-      "group": "concept",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
-    },
-    {
-      "id": "demo_research",
-      "label": "Public demo node",
-      "group": "other",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
-    },
-    {
-      "id": "demo_brand",
-      "label": "Public demo node",
-      "group": "other",
-      "value": 13,
-      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
-    },
-    {
-      "id": "demo_products",
-      "label": "Public demo node",
-      "group": "other",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
-    },
-    {
-      "id": "demo_state",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 16,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_facebook",
-      "label": "Public demo node",
-      "group": "other",
-      "value": 13,
-      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
-    },
-    {
-      "id": "demo_linkedin",
-      "label": "Public demo node",
-      "group": "other",
-      "value": 13,
-      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
-    },
-    {
-      "id": "demo_web",
-      "label": "Public demo node",
-      "group": "other",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
-    },
-    {
-      "id": "demo_steward",
-      "label": "Public demo node",
-      "group": "root",
-      "value": 18,
-      "detail": "Sanitized public demo entity (group root). See README for scope and limits."
-    },
-    {
-      "id": "demo_presence_hub",
-      "label": "Public demo node",
-      "group": "other",
       "value": 15,
-      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
+      "detail": "Information filtered for relevance and coherence.",
+      "x": 210,
+      "y": 92.4,
+      "fixed": true
     },
     {
-      "id": "demo_runtime",
-      "label": "Public demo node",
-      "group": "other",
-      "value": 18,
-      "detail": "Sanitized public demo entity (group other). See README for scope and limits."
-    },
-    {
-      "id": "demo_svc_opencode",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_svc_fs",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 12,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_svc_llm",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 15,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_svc_alpha",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 16,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_svc_voice",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 12,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_svc_driver",
-      "label": "Public demo node",
-      "group": "art",
-      "value": 12,
-      "detail": "Sanitized public demo entity (group art). See README for scope and limits."
-    },
-    {
-      "id": "demo_syn",
-      "label": "Public demo node",
-      "group": "concept",
-      "value": 18,
-      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
-    },
-    {
-      "id": "demo_ten",
-      "label": "Public demo node",
-      "group": "concept",
-      "value": 16,
-      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
-    },
-    {
-      "id": "demo_pot",
-      "label": "Public demo node",
+      "id": "curation",
+      "label": "Curation",
       "group": "concept",
       "value": 17,
-      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
+      "detail": "Select, order, annotate and deliver information.",
+      "x": 260.40000000000003,
+      "y": 172.2,
+      "fixed": true
     },
     {
-      "id": "demo_loop",
-      "label": "Public demo node",
+      "id": "conformance",
+      "label": "Conformance",
       "group": "concept",
-      "value": 14,
-      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
+      "value": 15,
+      "detail": "Map evidence to commitments and controls.",
+      "x": -71.39999999999999,
+      "y": 155.4,
+      "fixed": true
     },
     {
-      "id": "demo_metacognition",
-      "label": "Public demo node",
+      "id": "governance",
+      "label": "Governance",
+      "group": "a",
+      "value": 18,
+      "detail": "Ownership, accountability, policy and permissions.",
+      "x": -214.2,
+      "y": 79.8,
+      "fixed": true
+    },
+    {
+      "id": "security",
+      "label": "Security",
+      "group": "a",
+      "value": 16,
+      "detail": "Protection, access and resilience.",
+      "x": -268.8,
+      "y": 168,
+      "fixed": true
+    },
+    {
+      "id": "research",
+      "label": "Research",
+      "group": "other",
+      "value": 14,
+      "detail": "Evidence-based inquiry and synthesis.",
+      "x": -348.6,
+      "y": 281.40000000000003,
+      "fixed": true
+    },
+    {
+      "id": "metacognition",
+      "label": "Metacognition",
+      "group": "concept",
+      "value": 15,
+      "detail": "Monitor assumptions, blind spots and learning.",
+      "x": -84,
+      "y": 294,
+      "fixed": true
+    },
+    {
+      "id": "evidence-loop",
+      "label": "Evidence Loop",
+      "group": "art",
+      "value": 21,
+      "detail": "Collect → verify → decide → act → reassess.",
+      "x": -168,
+      "y": 147,
+      "fixed": true
+    },
+    {
+      "id": "verifier",
+      "label": "Verifier",
+      "group": "art",
+      "value": 16,
+      "detail": "Checks integrity, provenance and expected outcomes.",
+      "x": -268.8,
+      "y": 218.4,
+      "fixed": true
+    },
+    {
+      "id": "analysis",
+      "label": "Analysis",
+      "group": "art",
+      "value": 15,
+      "detail": "Structured synthesis of evidence and observations.",
+      "x": 0,
+      "y": 0,
+      "fixed": true
+    },
+    {
+      "id": "monitoring",
+      "label": "Monitoring",
+      "group": "other",
+      "value": 13,
+      "detail": "Continuous feedback from systems and outcomes.",
+      "x": -302.40000000000003,
+      "y": 268.8,
+      "fixed": true
+    },
+    {
+      "id": "build-pipeline",
+      "label": "Build Pipeline",
+      "group": "art",
+      "value": 19,
+      "detail": "Design, iterate, release and learn.",
+      "x": 184.8,
+      "y": -134.4,
+      "fixed": true
+    },
+    {
+      "id": "manifest",
+      "label": "Release Manifest",
+      "group": "art",
+      "value": 14,
+      "detail": "Versioned description of what was built and why.",
+      "x": 260.40000000000003,
+      "y": -142.79999999999998,
+      "fixed": true
+    },
+    {
+      "id": "analysis-engine",
+      "label": "Analysis Engine",
+      "group": "art",
+      "value": 15,
+      "detail": "Turns raw observations into reusable signals.",
+      "x": 252,
+      "y": -222.6,
+      "fixed": true
+    },
+    {
+      "id": "delivery",
+      "label": "Delivery",
+      "group": "other",
+      "value": 14,
+      "detail": "Packaging knowledge into usable artifacts.",
+      "x": 155.4,
+      "y": -235.2,
+      "fixed": true
+    },
+    {
+      "id": "lib-01",
+      "label": "Knowledge 01 · Life Systems",
+      "group": "lib",
+      "value": 14,
+      "detail": "Living systems, vitality and resilience.",
+      "x": -344.83551998519744,
+      "y": -159.59839910159977,
+      "fixed": true
+    },
+    {
+      "id": "lib-02",
+      "label": "Knowledge 02 · Agentic Systems",
+      "group": "lib",
+      "value": 14,
+      "detail": "Agents, autonomy, memory and collaboration.",
+      "x": -303.84865206000893,
+      "y": -254.61663917943793,
+      "fixed": true
+    },
+    {
+      "id": "lib-03",
+      "label": "Knowledge 03 · Sovereign Infrastructure",
+      "group": "lib",
+      "value": 14,
+      "detail": "Infrastructure, coordination and public value.",
+      "x": -237.3321240241759,
+      "y": -333.8879504330355,
+      "fixed": true
+    },
+    {
+      "id": "lib-04",
+      "label": "Knowledge 04 · Trust & Security",
+      "group": "lib",
+      "value": 14,
+      "detail": "Cryptography, secrecy, risk and verification.",
+      "x": -150.87471944142987,
+      "y": -390.75187997208394,
+      "fixed": true
+    },
+    {
+      "id": "lib-05",
+      "label": "Knowledge 05 · Research Methods",
+      "group": "lib",
+      "value": 14,
+      "detail": "Evidence, models and disciplined inquiry.",
+      "x": -51.7406737726872,
+      "y": -420.43066497339714,
+      "fixed": true
+    },
+    {
+      "id": "lib-06",
+      "label": "Knowledge 06 · Applied Automation",
+      "group": "lib",
+      "value": 14,
+      "detail": "Automation, tooling and operational delivery.",
+      "x": 51.740673772686755,
+      "y": -420.4306649733972,
+      "fixed": true
+    },
+    {
+      "id": "lib-07",
+      "label": "Knowledge 07 · Complex Systems",
+      "group": "lib",
+      "value": 16,
+      "detail": "Emergence, boundaries, feedback and resilience.",
+      "x": 150.87471944142976,
+      "y": -390.75187997208394,
+      "fixed": true
+    },
+    {
+      "id": "lib-08",
+      "label": "Knowledge 08 · Perception & Meaning",
+      "group": "lib",
+      "value": 16,
+      "detail": "How people perceive, interpret and construct meaning.",
+      "x": 237.3321240241759,
+      "y": -333.8879504330355,
+      "fixed": true
+    },
+    {
+      "id": "lib-09",
+      "label": "Knowledge 09 · Coordination & Civilization",
+      "group": "lib",
+      "value": 16,
+      "detail": "Incentives, institutions and collective action.",
+      "x": 303.848652060009,
+      "y": -254.61663917943778,
+      "fixed": true
+    },
+    {
+      "id": "lib-10",
+      "label": "Knowledge 10 · First Principles",
+      "group": "lib",
+      "value": 16,
+      "detail": "Fundamental questions and cross-scale reasoning.",
+      "x": 344.8355199851974,
+      "y": -159.59839910159988,
+      "fixed": true
+    },
+    {
+      "id": "bridge-01",
+      "label": "Bridge · Bio Signal",
+      "group": "bridge",
+      "value": 12,
+      "detail": "Intersection of biological, technological and signal domains.",
+      "x": -348.6,
+      "y": -88.2,
+      "fixed": true
+    },
+    {
+      "id": "bridge-02",
+      "label": "Bridge · Persistent Loops",
+      "group": "bridge",
+      "value": 12,
+      "detail": "Intersection of behavior, memory and feedback systems.",
+      "x": 268.8,
+      "y": -306.59999999999997,
+      "fixed": true
+    },
+    {
+      "id": "bridge-03",
+      "label": "Bridge · Common Ground",
+      "group": "bridge",
+      "value": 12,
+      "detail": "Intersection of community, governance and infrastructure.",
+      "x": 264.59999999999997,
+      "y": 75.60000000000001,
+      "fixed": true
+    },
+    {
+      "id": "bridge-04",
+      "label": "Bridge · Order / Chaos",
+      "group": "bridge",
+      "value": 12,
+      "detail": "Intersection of research, security and adversarial systems.",
+      "x": -252,
+      "y": -285.59999999999997,
+      "fixed": true
+    },
+    {
+      "id": "bridge-05",
+      "label": "Bridge · Builder Arc",
+      "group": "bridge",
+      "value": 12,
+      "detail": "Intersection of making, digitizing and automating.",
+      "x": 294,
+      "y": -184.8,
+      "fixed": true
+    },
+    {
+      "id": "arc-01",
+      "label": "Journey · Signal Awakening",
+      "group": "lib",
+      "value": 10,
+      "detail": "First orientation and pattern discovery.",
+      "x": -459.1173744542914,
+      "y": -139.754780428323,
+      "fixed": true
+    },
+    {
+      "id": "arc-02",
+      "label": "Journey · Foundations",
+      "group": "lib",
+      "value": 10,
+      "detail": "Roots, habits and core identity.",
+      "x": -424.0704362342765,
+      "y": -252.4664790614793,
+      "fixed": true
+    },
+    {
+      "id": "arc-03",
+      "label": "Journey · Groove Intelligence",
+      "group": "lib",
+      "value": 10,
+      "detail": "Rhythm, movement and embodied pattern.",
+      "x": -361.83948165281714,
+      "y": -352.76365339480424,
+      "fixed": true
+    },
+    {
+      "id": "arc-04",
+      "label": "Journey · Voice of Intent",
+      "group": "lib",
+      "value": 10,
+      "detail": "Purpose, testimony and expression.",
+      "x": -276.41367652527356,
+      "y": -434.2169940609794,
+      "fixed": true
+    },
+    {
+      "id": "arc-05",
+      "label": "Journey · Cycles of Becoming",
+      "group": "lib",
+      "value": 10,
+      "detail": "Repetition, entrainment and compounding loops.",
+      "x": -173.26903682884452,
+      "y": -491.60513037209313,
+      "fixed": true
+    },
+    {
+      "id": "arc-06",
+      "label": "Journey · Dialogue & Network",
+      "group": "lib",
+      "value": 10,
+      "detail": "Collaboration, exchange and relationship.",
+      "x": -59.017401856081776,
+      "y": -521.2493337417168,
+      "fixed": true
+    },
+    {
+      "id": "arc-07",
+      "label": "Journey · Tension to Breakthrough",
+      "group": "lib",
+      "value": 10,
+      "detail": "Productive friction, crisis and release.",
+      "x": 59.017401856081605,
+      "y": -521.2493337417168,
+      "fixed": true
+    },
+    {
+      "id": "arc-08",
+      "label": "Journey · Complex Harmony",
+      "group": "lib",
+      "value": 10,
+      "detail": "Polyrhythm, integration and many-layered coherence.",
+      "x": 173.26903682884475,
+      "y": -491.6051303720931,
+      "fixed": true
+    },
+    {
+      "id": "arc-09",
+      "label": "Journey · Shared Rise",
+      "group": "lib",
+      "value": 10,
+      "detail": "Community, belonging and distributed success.",
+      "x": 276.4136765252734,
+      "y": -434.21699406097946,
+      "fixed": true
+    },
+    {
+      "id": "arc-10",
+      "label": "Journey · Resonant Learning",
+      "group": "lib",
+      "value": 10,
+      "detail": "Restoration, embodiment and sustainable practice.",
+      "x": 361.83948165281674,
+      "y": -352.7636533948047,
+      "fixed": true
+    },
+    {
+      "id": "arc-11",
+      "label": "Journey · Diaspora Continuum",
+      "group": "lib",
+      "value": 10,
+      "detail": "Memory, continuity and transformation across scales.",
+      "x": 424.07043623427643,
+      "y": -252.46647906147945,
+      "fixed": true
+    },
+    {
+      "id": "arc-12",
+      "label": "Journey · Systems of Light",
+      "group": "lib",
+      "value": 10,
+      "detail": "Synthesis and luminous, coherent action.",
+      "x": 459.11737445429134,
+      "y": -139.75478042832336,
+      "fixed": true
+    },
+    {
+      "id": "presence",
+      "label": "Presence",
+      "group": "other",
+      "value": 15,
+      "detail": "Public-facing expression and reputation.",
+      "x": 0,
+      "y": 210,
+      "fixed": true
+    },
+    {
+      "id": "web",
+      "label": "Web",
+      "group": "other",
+      "value": 14,
+      "detail": "Owned public web presence.",
+      "x": 0,
+      "y": 294,
+      "fixed": true
+    },
+    {
+      "id": "social",
+      "label": "Social",
+      "group": "other",
+      "value": 12,
+      "detail": "Social channels and community presence.",
+      "x": 100.8,
+      "y": 344.4,
+      "fixed": true
+    },
+    {
+      "id": "community",
+      "label": "Community",
+      "group": "other",
+      "value": 14,
+      "detail": "Belonging, reciprocity and shared action.",
+      "x": 79.8,
+      "y": 260.40000000000003,
+      "fixed": true
+    },
+    {
+      "id": "brand",
+      "label": "Brand",
+      "group": "other",
+      "value": 13,
+      "detail": "Signal quality, identity and trust.",
+      "x": -79.8,
+      "y": 260.40000000000003,
+      "fixed": true
+    },
+    {
+      "id": "runtime",
+      "label": "Runtime",
+      "group": "other",
+      "value": 17,
+      "detail": "Live systems that execute and support work.",
+      "x": 0,
+      "y": -180.6,
+      "fixed": true
+    },
+    {
+      "id": "automation",
+      "label": "Automation Service",
+      "group": "art",
+      "value": 12,
+      "detail": "Executes repeatable tasks reliably.",
+      "x": -117.6,
+      "y": -260.40000000000003,
+      "fixed": true
+    },
+    {
+      "id": "agent",
+      "label": "Agent Service",
+      "group": "art",
+      "value": 13,
+      "detail": "Coordinates tools and tasks.",
+      "x": 0,
+      "y": -277.2,
+      "fixed": true
+    },
+    {
+      "id": "knowledge-service",
+      "label": "Knowledge Service",
+      "group": "art",
+      "value": 12,
+      "detail": "Retrieves, transforms and delivers knowledge.",
+      "x": 117.6,
+      "y": -260.40000000000003,
+      "fixed": true
+    },
+    {
+      "id": "voice-service",
+      "label": "Voice Service",
+      "group": "art",
+      "value": 11,
+      "detail": "Turns intent into spoken communication.",
+      "x": 0,
+      "y": -336,
+      "fixed": true
+    },
+    {
+      "id": "best-synergy",
+      "label": "Best Connections",
+      "group": "concept",
+      "value": 18,
+      "detail": "High-value associations across domains.",
+      "x": 84,
+      "y": 117.6,
+      "fixed": true
+    },
+    {
+      "id": "weak-links",
+      "label": "Weak Connections",
       "group": "concept",
       "value": 16,
-      "detail": "Sanitized public demo entity (group concept). See README for scope and limits."
+      "detail": "Risks, frictions and low-confidence links.",
+      "x": -113.4,
+      "y": 226.8,
+      "fixed": true
+    },
+    {
+      "id": "potential-links",
+      "label": "Potential Links",
+      "group": "concept",
+      "value": 17,
+      "detail": "Promising but unproven associations.",
+      "x": 126,
+      "y": 218.4,
+      "fixed": true
+    },
+    {
+      "id": "feedback-loops",
+      "label": "Feedback Loops",
+      "group": "concept",
+      "value": 15,
+      "detail": "Self-reinforcing and self-correcting cycles.",
+      "x": 0,
+      "y": 310.8,
+      "fixed": true
+    },
+    {
+      "id": "assumptions",
+      "label": "Assumptions",
+      "group": "concept",
+      "value": 12,
+      "detail": "Claims to validate, challenge or discard.",
+      "x": 0,
+      "y": 0,
+      "fixed": true
     }
   ],
   "edges": [
     {
-      "from": "demo_mission",
-      "to": "demo_operating_model",
-      "label": "operates_by",
+      "from": "mission",
+      "to": "steward",
+      "label": "embodied_by",
       "id": 0
     },
     {
-      "from": "demo_mission",
-      "to": "demo_spine_a",
-      "label": "advances",
+      "from": "mission",
+      "to": "operating-model",
+      "label": "organized_by",
       "id": 1
     },
     {
-      "from": "demo_mission",
-      "to": "demo_spine_b",
-      "label": "advances",
+      "from": "mission",
+      "to": "spine-a",
+      "label": "advanced_by",
       "id": 2
     },
     {
-      "from": "demo_mission",
-      "to": "demo_presence",
-      "label": "expressed_through",
+      "from": "mission",
+      "to": "spine-b",
+      "label": "advanced_by",
       "id": 3
     },
     {
-      "from": "demo_presence",
-      "to": "demo_spine_b",
-      "label": "hosts",
+      "from": "mission",
+      "to": "presence",
+      "label": "expressed_through",
       "id": 4
     },
     {
-      "from": "demo_operating_model",
-      "to": "demo_plan",
-      "label": "codified_in",
+      "from": "steward",
+      "to": "metacognition",
+      "label": "practices",
       "id": 5
     },
     {
-      "from": "demo_plan",
-      "to": "demo_spine_a",
-      "label": "schedules",
+      "from": "steward",
+      "to": "community",
+      "label": "belongs_to",
       "id": 6
     },
     {
-      "from": "demo_plan",
-      "to": "demo_spine_b",
-      "label": "schedules",
+      "from": "operating-model",
+      "to": "cadence",
+      "label": "codified_in",
       "id": 7
     },
     {
-      "from": "demo_spine_a",
-      "to": "demo_reports",
-      "label": "contains",
+      "from": "operating-model",
+      "to": "current-state",
+      "label": "tracks",
       "id": 8
     },
     {
-      "from": "demo_reports",
-      "to": "demo_conformance_map",
-      "label": "produces",
+      "from": "cadence",
+      "to": "current-state",
+      "label": "feeds",
       "id": 9
     },
     {
-      "from": "demo_reports",
-      "to": "demo_spec_loop",
-      "label": "produces",
+      "from": "current-state",
+      "to": "spine-a",
+      "label": "informs",
       "id": 10
     },
     {
-      "from": "demo_reports",
-      "to": "demo_analysis_loop",
-      "label": "contains",
+      "from": "current-state",
+      "to": "spine-b",
+      "label": "informs",
       "id": 11
     },
     {
-      "from": "demo_conformance_map",
-      "to": "demo_demonstrator",
-      "label": "maps_to",
+      "from": "spine-a",
+      "to": "governance",
+      "label": "contains",
       "id": 12
     },
     {
-      "from": "demo_spec_loop",
-      "to": "demo_analysis_loop",
-      "label": "specifies",
+      "from": "spine-a",
+      "to": "security",
+      "label": "contains",
       "id": 13
     },
     {
-      "from": "demo_analysis_loop",
-      "to": "demo_demonstrator",
-      "label": "aligns_with",
+      "from": "spine-a",
+      "to": "evidence-loop",
+      "label": "contains",
       "id": 14
     },
     {
-      "from": "demo_analysis_loop",
-      "to": "demo_source_a",
-      "label": "consumes",
+      "from": "spine-a",
+      "to": "verifier",
+      "label": "contains",
       "id": 15
     },
     {
-      "from": "demo_analysis_loop",
-      "to": "demo_source_b",
-      "label": "consumes",
+      "from": "spine-a",
+      "to": "conformance",
+      "label": "targets",
       "id": 16
     },
     {
-      "from": "demo_analysis_loop",
-      "to": "demo_conformance",
-      "label": "implements",
+      "from": "spine-b",
+      "to": "signal",
+      "label": "contains",
       "id": 17
     },
     {
-      "from": "demo_spine_a",
-      "to": "demo_conformance",
-      "label": "targets",
+      "from": "spine-b",
+      "to": "curation",
+      "label": "contains",
       "id": 18
     },
     {
-      "from": "demo_spine_b",
-      "to": "demo_build_pipeline",
+      "from": "spine-b",
+      "to": "build-pipeline",
       "label": "contains",
       "id": 19
     },
     {
-      "from": "demo_build_pipeline",
-      "to": "demo_stabilization",
-      "label": "produces",
+      "from": "spine-b",
+      "to": "analysis-engine",
+      "label": "contains",
       "id": 20
     },
     {
-      "from": "demo_build_pipeline",
-      "to": "demo_golden_run",
-      "label": "produces",
+      "from": "curation",
+      "to": "signal",
+      "label": "refines",
       "id": 21
     },
     {
-      "from": "demo_build_pipeline",
-      "to": "demo_audio_analysis",
-      "label": "produces",
+      "from": "curation",
+      "to": "conformance",
+      "label": "harmonizes_with",
+      "dashes": true,
       "id": 22
     },
     {
-      "from": "demo_build_pipeline",
-      "to": "demo_curation",
-      "label": "implements",
+      "from": "conformance",
+      "to": "analysis",
+      "label": "uses",
       "id": 23
     },
     {
-      "from": "demo_spine_b",
-      "to": "demo_curation",
-      "label": "targets",
+      "from": "governance",
+      "to": "security",
+      "label": "enforces",
       "id": 24
     },
     {
-      "from": "demo_bridge_1",
-      "to": "demo_lib_1",
-      "label": "bridges",
-      "dashes": true,
+      "from": "governance",
+      "to": "evidence-loop",
+      "label": "authorizes",
       "id": 25
     },
     {
-      "from": "demo_bridge_1",
-      "to": "demo_lib_8",
-      "label": "bridges",
-      "dashes": true,
+      "from": "evidence-loop",
+      "to": "verifier",
+      "label": "contains",
       "id": 26
     },
     {
-      "from": "demo_bridge_2",
-      "to": "demo_lib_2",
-      "label": "bridges",
-      "dashes": true,
+      "from": "evidence-loop",
+      "to": "analysis",
+      "label": "feeds",
       "id": 27
     },
     {
-      "from": "demo_bridge_2",
-      "to": "demo_arc_5",
-      "label": "bridges",
-      "dashes": true,
+      "from": "evidence-loop",
+      "to": "monitoring",
+      "label": "feeds",
       "id": 28
     },
     {
-      "from": "demo_bridge_3",
-      "to": "demo_lib_3",
-      "label": "bridges",
-      "dashes": true,
+      "from": "verifier",
+      "to": "analysis",
+      "label": "validates",
       "id": 29
     },
     {
-      "from": "demo_bridge_3",
-      "to": "demo_lib_9",
-      "label": "bridges",
-      "dashes": true,
+      "from": "monitoring",
+      "to": "current-state",
+      "label": "updates",
       "id": 30
     },
     {
-      "from": "demo_bridge_4",
-      "to": "demo_lib_5",
-      "label": "bridges",
-      "dashes": true,
+      "from": "analysis",
+      "to": "build-pipeline",
+      "label": "informs",
       "id": 31
     },
     {
-      "from": "demo_bridge_4",
-      "to": "demo_lib_7",
-      "label": "bridges",
-      "dashes": true,
+      "from": "build-pipeline",
+      "to": "manifest",
+      "label": "produces",
       "id": 32
     },
     {
-      "from": "demo_bridge_5",
-      "to": "demo_lib_6",
-      "label": "bridges",
-      "dashes": true,
+      "from": "build-pipeline",
+      "to": "delivery",
+      "label": "produces",
       "id": 33
     },
     {
-      "from": "demo_bridge_5",
-      "to": "demo_build_pipeline",
-      "label": "bridges",
-      "dashes": true,
+      "from": "build-pipeline",
+      "to": "analysis-engine",
+      "label": "produces",
       "id": 34
     },
     {
-      "from": "demo_lib_8",
-      "to": "demo_lib_10",
-      "label": "axis_with",
+      "from": "spine-b",
+      "to": "lib-01",
+      "label": "includes",
       "dashes": true,
-      "color": {
-        "color": "#7dd3fc"
-      },
       "id": 35
     },
     {
-      "from": "demo_lib_7",
-      "to": "demo_lib_3",
-      "label": "axis_with",
+      "from": "mission",
+      "to": "lib-01",
+      "label": "informs",
       "dashes": true,
-      "color": {
-        "color": "#7dd3fc"
-      },
       "id": 36
     },
     {
-      "from": "demo_lib_2",
-      "to": "demo_lib_9",
-      "label": "axis_with",
+      "from": "spine-b",
+      "to": "lib-02",
+      "label": "includes",
       "dashes": true,
-      "color": {
-        "color": "#7dd3fc"
-      },
       "id": 37
     },
     {
-      "from": "demo_lib_1",
-      "to": "demo_bridge_1",
-      "label": "axis_with",
+      "from": "mission",
+      "to": "lib-02",
+      "label": "informs",
       "dashes": true,
-      "color": {
-        "color": "#7dd3fc"
-      },
       "id": 38
     },
     {
-      "from": "demo_mission",
-      "to": "demo_research",
-      "label": "informed_by",
+      "from": "spine-b",
+      "to": "lib-03",
+      "label": "includes",
+      "dashes": true,
       "id": 39
     },
     {
-      "from": "demo_mission",
-      "to": "demo_brand",
-      "label": "expressed_as",
+      "from": "mission",
+      "to": "lib-03",
+      "label": "informs",
+      "dashes": true,
       "id": 40
     },
     {
-      "from": "demo_mission",
-      "to": "demo_products",
-      "label": "applied_in",
+      "from": "spine-b",
+      "to": "lib-04",
+      "label": "includes",
+      "dashes": true,
       "id": 41
     },
     {
-      "from": "demo_mission",
-      "to": "demo_presence_hub",
-      "label": "expressed_through",
+      "from": "mission",
+      "to": "lib-04",
+      "label": "informs",
+      "dashes": true,
       "id": 42
     },
     {
-      "from": "demo_brand",
-      "to": "demo_presence_hub",
-      "label": "unifies",
+      "from": "spine-b",
+      "to": "lib-05",
+      "label": "includes",
+      "dashes": true,
       "id": 43
     },
     {
-      "from": "demo_presence",
-      "to": "demo_presence_hub",
-      "label": "integrates",
+      "from": "mission",
+      "to": "lib-05",
+      "label": "informs",
+      "dashes": true,
       "id": 44
     },
     {
-      "from": "demo_presence_hub",
-      "to": "demo_facebook",
+      "from": "spine-b",
+      "to": "lib-06",
       "label": "includes",
+      "dashes": true,
       "id": 45
     },
     {
-      "from": "demo_presence_hub",
-      "to": "demo_linkedin",
-      "label": "includes",
+      "from": "mission",
+      "to": "lib-06",
+      "label": "informs",
+      "dashes": true,
       "id": 46
     },
     {
-      "from": "demo_presence_hub",
-      "to": "demo_web",
+      "from": "spine-b",
+      "to": "lib-07",
       "label": "includes",
+      "dashes": true,
       "id": 47
     },
     {
-      "from": "demo_presence_hub",
-      "to": "demo_presence",
-      "label": "includes",
+      "from": "mission",
+      "to": "lib-07",
+      "label": "informs",
       "dashes": true,
       "id": 48
     },
     {
-      "from": "demo_brand",
-      "to": "demo_facebook",
-      "label": "published_on",
+      "from": "spine-b",
+      "to": "lib-08",
+      "label": "includes",
       "dashes": true,
       "id": 49
     },
     {
-      "from": "demo_presence",
-      "to": "demo_facebook",
-      "label": "cross_presence",
+      "from": "mission",
+      "to": "lib-08",
+      "label": "informs",
       "dashes": true,
       "id": 50
     },
     {
-      "from": "demo_brand",
-      "to": "demo_linkedin",
-      "label": "published_on",
+      "from": "spine-b",
+      "to": "lib-09",
+      "label": "includes",
       "dashes": true,
       "id": 51
     },
     {
-      "from": "demo_presence",
-      "to": "demo_linkedin",
-      "label": "cross_presence",
+      "from": "mission",
+      "to": "lib-09",
+      "label": "informs",
       "dashes": true,
       "id": 52
     },
     {
-      "from": "demo_brand",
-      "to": "demo_web",
-      "label": "published_on",
+      "from": "spine-b",
+      "to": "lib-10",
+      "label": "includes",
       "dashes": true,
       "id": 53
     },
     {
-      "from": "demo_mission",
-      "to": "demo_web",
-      "label": "expressed_through",
+      "from": "mission",
+      "to": "lib-10",
+      "label": "informs",
       "dashes": true,
       "id": 54
     },
     {
-      "from": "demo_web",
-      "to": "demo_brand",
-      "label": "hosts_assets",
+      "from": "spine-a",
+      "to": "lib-03",
+      "label": "informed_by",
       "dashes": true,
       "id": 55
     },
     {
-      "from": "demo_steward",
-      "to": "demo_mission",
-      "label": "stewards",
+      "from": "spine-a",
+      "to": "lib-04",
+      "label": "informed_by",
+      "dashes": true,
       "id": 56
     },
     {
-      "from": "demo_steward",
-      "to": "demo_presence",
-      "label": "creates_curates",
+      "from": "spine-a",
+      "to": "lib-06",
+      "label": "informed_by",
+      "dashes": true,
       "id": 57
     },
     {
-      "from": "demo_steward",
-      "to": "demo_brand",
-      "label": "associated_with",
+      "from": "spine-a",
+      "to": "lib-09",
+      "label": "informed_by",
+      "dashes": true,
       "id": 58
     },
     {
-      "from": "demo_steward",
-      "to": "demo_presence_hub",
-      "label": "represented_in",
+      "from": "lib-01",
+      "to": "bridge-01",
+      "label": "connects_to",
       "id": 59
     },
     {
-      "from": "demo_steward",
-      "to": "demo_facebook",
-      "label": "presence_on",
-      "dashes": true,
+      "from": "lib-08",
+      "to": "bridge-01",
+      "label": "connects_to",
       "id": 60
     },
     {
-      "from": "demo_steward",
-      "to": "demo_linkedin",
-      "label": "presence_on",
-      "dashes": true,
+      "from": "lib-02",
+      "to": "bridge-02",
+      "label": "connects_to",
       "id": 61
     },
     {
-      "from": "demo_steward",
-      "to": "demo_web",
-      "label": "presence_on",
-      "dashes": true,
+      "from": "arc-05",
+      "to": "bridge-02",
+      "label": "connects_to",
       "id": 62
     },
     {
-      "from": "demo_steward",
-      "to": "demo_runtime",
-      "label": "operates",
-      "dashes": true,
+      "from": "lib-03",
+      "to": "bridge-03",
+      "label": "connects_to",
       "id": 63
     },
     {
-      "from": "demo_mission",
-      "to": "demo_runtime",
-      "label": "runs_on",
+      "from": "lib-09",
+      "to": "bridge-03",
+      "label": "connects_to",
       "id": 64
     },
     {
-      "from": "demo_runtime",
-      "to": "demo_svc_opencode",
-      "label": "runs",
+      "from": "lib-05",
+      "to": "bridge-04",
+      "label": "connects_to",
       "id": 65
     },
     {
-      "from": "demo_runtime",
-      "to": "demo_svc_fs",
-      "label": "runs",
+      "from": "lib-07",
+      "to": "bridge-04",
+      "label": "connects_to",
       "id": 66
     },
     {
-      "from": "demo_runtime",
-      "to": "demo_svc_llm",
-      "label": "runs",
+      "from": "lib-06",
+      "to": "bridge-05",
+      "label": "connects_to",
       "id": 67
     },
     {
-      "from": "demo_runtime",
-      "to": "demo_svc_alpha",
-      "label": "runs",
+      "from": "build-pipeline",
+      "to": "bridge-05",
+      "label": "connects_to",
       "id": 68
     },
     {
-      "from": "demo_runtime",
-      "to": "demo_svc_voice",
-      "label": "runs",
+      "from": "arc-01",
+      "to": "arc-02",
+      "label": "next",
+      "dashes": true,
       "id": 69
     },
     {
-      "from": "demo_runtime",
-      "to": "demo_svc_driver",
-      "label": "runs",
+      "from": "arc-02",
+      "to": "arc-03",
+      "label": "next",
+      "dashes": true,
       "id": 70
     },
     {
-      "from": "demo_svc_opencode",
-      "to": "demo_svc_fs",
-      "label": "uses",
+      "from": "arc-03",
+      "to": "arc-04",
+      "label": "next",
+      "dashes": true,
       "id": 71
     },
     {
-      "from": "demo_svc_opencode",
-      "to": "demo_svc_llm",
-      "label": "can_use",
+      "from": "arc-04",
+      "to": "arc-05",
+      "label": "next",
+      "dashes": true,
       "id": 72
     },
     {
-      "from": "demo_runtime",
-      "to": "demo_spine_a",
-      "label": "supports",
+      "from": "arc-05",
+      "to": "arc-06",
+      "label": "next",
       "dashes": true,
       "id": 73
     },
     {
-      "from": "demo_runtime",
-      "to": "demo_spine_b",
-      "label": "supports",
+      "from": "arc-06",
+      "to": "arc-07",
+      "label": "next",
       "dashes": true,
       "id": 74
     },
     {
-      "from": "demo_svc_opencode",
-      "to": "demo_plan",
-      "label": "enables",
+      "from": "arc-07",
+      "to": "arc-08",
+      "label": "next",
       "dashes": true,
       "id": 75
     },
     {
-      "from": "demo_svc_opencode",
-      "to": "demo_reports",
-      "label": "works_on",
+      "from": "arc-08",
+      "to": "arc-09",
+      "label": "next",
       "dashes": true,
       "id": 76
     },
     {
-      "from": "demo_svc_opencode",
-      "to": "demo_build_pipeline",
-      "label": "works_on",
+      "from": "arc-09",
+      "to": "arc-10",
+      "label": "next",
       "dashes": true,
       "id": 77
     },
     {
-      "from": "demo_svc_alpha",
-      "to": "demo_products",
-      "label": "related_to",
+      "from": "arc-10",
+      "to": "arc-11",
+      "label": "next",
+      "dashes": true,
       "id": 78
     },
     {
-      "from": "demo_svc_voice",
-      "to": "demo_products",
-      "label": "related_to",
+      "from": "arc-11",
+      "to": "arc-12",
+      "label": "next",
+      "dashes": true,
       "id": 79
     },
     {
-      "from": "demo_conformance",
-      "to": "demo_curation",
-      "label": "harmonizes_with",
+      "from": "spine-b",
+      "to": "arc-01",
+      "label": "includes",
       "dashes": true,
-      "color": {
-        "color": "#a78bfa"
-      },
       "id": 80
     },
     {
-      "from": "demo_plan",
-      "to": "demo_state",
-      "label": "governs",
+      "from": "spine-b",
+      "to": "arc-02",
+      "label": "includes",
       "dashes": true,
       "id": 81
     },
     {
-      "from": "demo_presence_hub",
-      "to": "demo_products",
-      "label": "amplifies",
+      "from": "spine-b",
+      "to": "arc-03",
+      "label": "includes",
       "dashes": true,
       "id": 82
     },
     {
-      "from": "demo_mission",
-      "to": "demo_state",
-      "label": "has_state",
+      "from": "spine-b",
+      "to": "arc-04",
+      "label": "includes",
+      "dashes": true,
       "id": 83
     },
     {
-      "from": "demo_state",
-      "to": "demo_analysis_loop",
-      "label": "tracks",
+      "from": "spine-b",
+      "to": "arc-05",
+      "label": "includes",
+      "dashes": true,
       "id": 84
     },
     {
-      "from": "demo_state",
-      "to": "demo_build_pipeline",
-      "label": "tracks",
+      "from": "spine-b",
+      "to": "arc-06",
+      "label": "includes",
+      "dashes": true,
       "id": 85
     },
     {
-      "from": "demo_state",
-      "to": "demo_lib_7",
-      "label": "prioritises",
+      "from": "spine-b",
+      "to": "arc-07",
+      "label": "includes",
+      "dashes": true,
       "id": 86
     },
     {
-      "from": "demo_state",
-      "to": "demo_lib_8",
-      "label": "prioritises",
+      "from": "spine-b",
+      "to": "arc-08",
+      "label": "includes",
+      "dashes": true,
       "id": 87
     },
     {
-      "from": "demo_state",
-      "to": "demo_lib_9",
-      "label": "prioritises",
+      "from": "spine-b",
+      "to": "arc-09",
+      "label": "includes",
+      "dashes": true,
       "id": 88
     },
     {
-      "from": "demo_state",
-      "to": "demo_lib_10",
-      "label": "prioritises",
+      "from": "spine-b",
+      "to": "arc-10",
+      "label": "includes",
+      "dashes": true,
       "id": 89
     },
     {
-      "from": "demo_syn",
-      "to": "demo_curation",
-      "label": "best_synergy",
+      "from": "spine-b",
+      "to": "arc-11",
+      "label": "includes",
       "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
       "id": 90
     },
     {
-      "from": "demo_syn",
-      "to": "demo_conformance",
-      "label": "best_synergy",
+      "from": "spine-b",
+      "to": "arc-12",
+      "label": "includes",
       "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
       "id": 91
     },
     {
-      "from": "demo_syn",
-      "to": "demo_build_pipeline",
-      "label": "best_synergy",
-      "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
+      "from": "arc-12",
+      "to": "mission",
+      "label": "completes",
       "id": 92
     },
     {
-      "from": "demo_syn",
-      "to": "demo_demonstrator",
-      "label": "best_synergy",
-      "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
+      "from": "presence",
+      "to": "web",
+      "label": "includes",
       "id": 93
     },
     {
-      "from": "demo_syn",
-      "to": "demo_bridge_2",
-      "label": "best_synergy",
-      "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
+      "from": "presence",
+      "to": "social",
+      "label": "includes",
       "id": 94
     },
     {
-      "from": "demo_syn",
-      "to": "demo_bridge_5",
-      "label": "best_synergy",
-      "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
+      "from": "presence",
+      "to": "community",
+      "label": "includes",
       "id": 95
     },
     {
-      "from": "demo_syn",
-      "to": "demo_arc_5",
-      "label": "best_synergy",
-      "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
+      "from": "presence",
+      "to": "brand",
+      "label": "expresses",
       "id": 96
     },
     {
-      "from": "demo_syn",
-      "to": "demo_steward",
-      "label": "best_synergy",
-      "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
+      "from": "brand",
+      "to": "web",
+      "label": "hosts",
       "id": 97
     },
     {
-      "from": "demo_syn",
-      "to": "demo_runtime",
-      "label": "best_synergy",
-      "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
+      "from": "brand",
+      "to": "community",
+      "label": "supports",
       "id": 98
     },
     {
-      "from": "demo_syn",
-      "to": "demo_lib_3",
-      "label": "best_synergy",
-      "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
+      "from": "steward",
+      "to": "presence",
+      "label": "represented_by",
       "id": 99
     },
     {
-      "from": "demo_syn",
-      "to": "demo_lib_9",
-      "label": "best_synergy",
+      "from": "web",
+      "to": "spine-b",
+      "label": "amplifies",
       "dashes": true,
-      "color": {
-        "color": "rgba(52,211,153,.6)"
-      },
       "id": 100
     },
     {
-      "from": "demo_ten",
-      "to": "demo_analysis_loop",
-      "label": "tension_risk",
+      "from": "community",
+      "to": "spine-a",
+      "label": "informs",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,113,133,.6)"
-      },
       "id": 101
     },
     {
-      "from": "demo_ten",
-      "to": "demo_source_b",
-      "label": "tension_risk",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,113,133,.6)"
-      },
+      "from": "runtime",
+      "to": "automation",
+      "label": "hosts",
       "id": 102
     },
     {
-      "from": "demo_ten",
-      "to": "demo_source_a",
-      "label": "tension_risk",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,113,133,.6)"
-      },
+      "from": "runtime",
+      "to": "agent",
+      "label": "hosts",
       "id": 103
     },
     {
-      "from": "demo_ten",
-      "to": "demo_build_pipeline",
-      "label": "tension_risk",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,113,133,.6)"
-      },
+      "from": "runtime",
+      "to": "knowledge-service",
+      "label": "hosts",
       "id": 104
     },
     {
-      "from": "demo_ten",
-      "to": "demo_lib_1",
-      "label": "tension_risk",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,113,133,.6)"
-      },
+      "from": "runtime",
+      "to": "voice-service",
+      "label": "hosts",
       "id": 105
     },
     {
-      "from": "demo_ten",
-      "to": "demo_lib_4",
-      "label": "tension_risk",
+      "from": "runtime",
+      "to": "spine-a",
+      "label": "supports",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,113,133,.6)"
-      },
       "id": 106
     },
     {
-      "from": "demo_ten",
-      "to": "demo_bridge_4",
-      "label": "tension_risk",
+      "from": "runtime",
+      "to": "spine-b",
+      "label": "supports",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,113,133,.6)"
-      },
       "id": 107
     },
     {
-      "from": "demo_ten",
-      "to": "demo_mission",
-      "label": "tension_risk",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,113,133,.6)"
-      },
+      "from": "agent",
+      "to": "build-pipeline",
+      "label": "enables",
       "id": 108
     },
     {
-      "from": "demo_ten",
-      "to": "demo_svc_llm",
-      "label": "tension_risk",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,113,133,.6)"
-      },
+      "from": "automation",
+      "to": "build-pipeline",
+      "label": "enables",
       "id": 109
     },
     {
-      "from": "demo_pot",
-      "to": "demo_linkedin",
-      "label": "potential_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
+      "from": "knowledge-service",
+      "to": "analysis",
+      "label": "feeds",
       "id": 110
     },
     {
-      "from": "demo_pot",
-      "to": "demo_facebook",
-      "label": "potential_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
+      "from": "voice-service",
+      "to": "community",
+      "label": "enables",
       "id": 111
     },
     {
-      "from": "demo_pot",
-      "to": "demo_web",
-      "label": "potential_next",
+      "from": "best-synergy",
+      "to": "conformance",
+      "label": "best_synergy",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
       "id": 112
     },
     {
-      "from": "demo_pot",
-      "to": "demo_svc_alpha",
-      "label": "potential_next",
+      "from": "best-synergy",
+      "to": "curation",
+      "label": "best_synergy",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
       "id": 113
     },
     {
-      "from": "demo_pot",
-      "to": "demo_svc_voice",
-      "label": "potential_next",
+      "from": "best-synergy",
+      "to": "evidence-loop",
+      "label": "best_synergy",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
       "id": 114
     },
     {
-      "from": "demo_pot",
-      "to": "demo_lib_8",
-      "label": "potential_next",
+      "from": "best-synergy",
+      "to": "build-pipeline",
+      "label": "best_synergy",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
       "id": 115
     },
     {
-      "from": "demo_pot",
-      "to": "demo_lib_10",
-      "label": "potential_next",
+      "from": "best-synergy",
+      "to": "bridge-02",
+      "label": "best_synergy",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
       "id": 116
     },
     {
-      "from": "demo_pot",
-      "to": "demo_bridge_1",
-      "label": "potential_next",
+      "from": "best-synergy",
+      "to": "bridge-05",
+      "label": "best_synergy",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
       "id": 117
     },
     {
-      "from": "demo_pot",
-      "to": "demo_bridge_3",
-      "label": "potential_next",
+      "from": "best-synergy",
+      "to": "presence",
+      "label": "best_synergy",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
       "id": 118
     },
     {
-      "from": "demo_pot",
-      "to": "demo_products",
-      "label": "potential_next",
+      "from": "weak-links",
+      "to": "evidence-loop",
+      "label": "weak_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.6)"
-      },
       "id": 119
     },
     {
-      "from": "demo_pot",
-      "to": "demo_rec_1",
-      "label": "potential_next",
+      "from": "weak-links",
+      "to": "monitoring",
+      "label": "weak_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 120
     },
     {
-      "from": "demo_pot",
-      "to": "demo_rec_2",
-      "label": "potential_next",
+      "from": "weak-links",
+      "to": "lib-01",
+      "label": "weak_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 121
     },
     {
-      "from": "demo_pot",
-      "to": "demo_rec_3",
-      "label": "potential_next",
+      "from": "weak-links",
+      "to": "lib-04",
+      "label": "weak_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 122
     },
     {
-      "from": "demo_pot",
-      "to": "demo_rec_4",
-      "label": "potential_next",
+      "from": "weak-links",
+      "to": "bridge-04",
+      "label": "weak_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 123
     },
     {
-      "from": "demo_pot",
-      "to": "demo_rec_5",
-      "label": "potential_next",
+      "from": "weak-links",
+      "to": "runtime",
+      "label": "weak_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 124
     },
     {
-      "from": "demo_pot",
-      "to": "demo_rec_6",
-      "label": "potential_next",
+      "from": "potential-links",
+      "to": "web",
+      "label": "potential_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 125
     },
     {
-      "from": "demo_pot",
-      "to": "demo_arc_1",
-      "label": "potential_next",
+      "from": "potential-links",
+      "to": "social",
+      "label": "potential_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 126
     },
     {
-      "from": "demo_pot",
-      "to": "demo_arc_12",
-      "label": "potential_next",
+      "from": "potential-links",
+      "to": "community",
+      "label": "potential_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 127
     },
     {
-      "from": "demo_pot",
-      "to": "demo_lib_7",
-      "label": "potential_next",
+      "from": "potential-links",
+      "to": "lib-07",
+      "label": "potential_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 128
     },
     {
-      "from": "demo_pot",
-      "to": "demo_lib_9",
-      "label": "potential_next",
+      "from": "potential-links",
+      "to": "lib-08",
+      "label": "potential_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 129
     },
     {
-      "from": "demo_pot",
-      "to": "demo_bridge_2",
-      "label": "potential_next",
+      "from": "potential-links",
+      "to": "lib-10",
+      "label": "potential_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 130
     },
     {
-      "from": "demo_pot",
-      "to": "demo_bridge_4",
-      "label": "potential_next",
+      "from": "potential-links",
+      "to": "bridge-01",
+      "label": "potential_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 131
     },
     {
-      "from": "demo_pot",
-      "to": "demo_bridge_5",
-      "label": "potential_next",
+      "from": "potential-links",
+      "to": "bridge-03",
+      "label": "potential_connection",
       "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
       "id": 132
     },
     {
-      "from": "demo_loop",
-      "to": "demo_analysis_loop",
+      "from": "feedback-loops",
+      "to": "evidence-loop",
       "label": "feedback_loop",
       "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.6)"
-      },
       "id": 133
     },
     {
-      "from": "demo_loop",
-      "to": "demo_plan",
+      "from": "feedback-loops",
+      "to": "monitoring",
       "label": "feedback_loop",
       "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.6)"
-      },
       "id": 134
     },
     {
-      "from": "demo_loop",
-      "to": "demo_state",
+      "from": "feedback-loops",
+      "to": "current-state",
       "label": "feedback_loop",
       "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.6)"
-      },
       "id": 135
     },
     {
-      "from": "demo_loop",
-      "to": "demo_curation",
+      "from": "feedback-loops",
+      "to": "curation",
       "label": "feedback_loop",
       "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.6)"
-      },
       "id": 136
     },
     {
-      "from": "demo_loop",
-      "to": "demo_runtime",
+      "from": "feedback-loops",
+      "to": "runtime",
       "label": "feedback_loop",
       "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.6)"
-      },
       "id": 137
     },
     {
-      "from": "demo_loop",
-      "to": "demo_build_pipeline",
+      "from": "feedback-loops",
+      "to": "metacognition",
       "label": "feedback_loop",
       "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.6)"
-      },
       "id": 138
     },
     {
-      "from": "demo_mission",
-      "to": "demo_lib_7",
-      "label": "anchors",
+      "from": "assumptions",
+      "to": "metacognition",
+      "label": "supports",
       "dashes": true,
-      "color": {
-        "color": "#34d399"
-      },
       "id": 139
     },
     {
-      "from": "demo_mission",
-      "to": "demo_lib_8",
-      "label": "anchors",
-      "dashes": true,
-      "color": {
-        "color": "#34d399"
-      },
+      "from": "assumptions",
+      "to": "research",
+      "label": "tested_by",
       "id": 140
     },
     {
-      "from": "demo_steward",
-      "to": "demo_analysis_loop",
-      "label": "connects_all",
-      "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.5)"
-      },
+      "from": "assumptions",
+      "to": "evidence-loop",
+      "label": "validated_by",
       "id": 141
     },
     {
-      "from": "demo_steward",
-      "to": "demo_build_pipeline",
-      "label": "connects_all",
-      "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.5)"
-      },
+      "from": "research",
+      "to": "analysis",
+      "label": "feeds",
       "id": 142
     },
     {
-      "from": "demo_steward",
-      "to": "demo_demonstrator",
-      "label": "connects_all",
-      "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.5)"
-      },
+      "from": "metacognition",
+      "to": "assumptions",
+      "label": "examines",
       "id": 143
-    },
-    {
-      "from": "demo_steward",
-      "to": "demo_curation",
-      "label": "connects_all",
-      "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.5)"
-      },
-      "id": 144
-    },
-    {
-      "from": "demo_steward",
-      "to": "demo_conformance",
-      "label": "connects_all",
-      "dashes": true,
-      "color": {
-        "color": "rgba(167,139,250,.5)"
-      },
-      "id": 145
-    },
-    {
-      "from": "demo_arc_1",
-      "to": "demo_arc_2",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 146
-    },
-    {
-      "from": "demo_arc_2",
-      "to": "demo_arc_3",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 147
-    },
-    {
-      "from": "demo_arc_3",
-      "to": "demo_arc_4",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 148
-    },
-    {
-      "from": "demo_arc_4",
-      "to": "demo_arc_5",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 149
-    },
-    {
-      "from": "demo_arc_5",
-      "to": "demo_arc_6",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 150
-    },
-    {
-      "from": "demo_arc_6",
-      "to": "demo_arc_7",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 151
-    },
-    {
-      "from": "demo_arc_7",
-      "to": "demo_arc_8",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 152
-    },
-    {
-      "from": "demo_arc_8",
-      "to": "demo_arc_9",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 153
-    },
-    {
-      "from": "demo_arc_9",
-      "to": "demo_arc_10",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 154
-    },
-    {
-      "from": "demo_arc_10",
-      "to": "demo_arc_11",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 155
-    },
-    {
-      "from": "demo_arc_11",
-      "to": "demo_arc_12",
-      "label": "arc_next",
-      "dashes": true,
-      "color": {
-        "color": "rgba(251,191,36,.35)"
-      },
-      "id": 156
-    },
-    {
-      "from": "demo_metacognition",
-      "to": "demo_loop",
-      "label": "monitors",
-      "dashes": true,
-      "color": {
-        "color": "#f472b6"
-      },
-      "id": 157
-    },
-    {
-      "from": "demo_metacognition",
-      "to": "demo_analysis_loop",
-      "label": "monitors",
-      "dashes": true,
-      "color": {
-        "color": "#f472b6"
-      },
-      "id": 158
-    },
-    {
-      "from": "demo_metacognition",
-      "to": "demo_state",
-      "label": "updates",
-      "dashes": true,
-      "color": {
-        "color": "#f472b6"
-      },
-      "id": 159
-    },
-    {
-      "from": "demo_metacognition",
-      "to": "demo_plan",
-      "label": "steers",
-      "dashes": true,
-      "color": {
-        "color": "#f472b6"
-      },
-      "id": 160
-    },
-    {
-      "from": "demo_metacognition",
-      "to": "demo_conformance",
-      "label": "verifies",
-      "dashes": true,
-      "color": {
-        "color": "#f472b6"
-      },
-      "id": 161
-    },
-    {
-      "from": "demo_metacognition",
-      "to": "demo_curation",
-      "label": "verifies",
-      "dashes": true,
-      "color": {
-        "color": "#f472b6"
-      },
-      "id": 162
     }
   ]
 };
